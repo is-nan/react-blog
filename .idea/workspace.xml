@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dab012b9-291c-4cd6-b9c8-5067519128e0" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/nanbk.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/AddAndSetArticle/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleFrom/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleTable/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/admin/Article/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/admin/Article/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/admin/Layouts/components/Contents/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/admin/Layouts/components/Headers/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/admin/Layouts/components/Siders/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/admin/Layouts/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/admin/Layouts/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Us5Gk1C5GBKHFGGKD9CczkxQkn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Blog-Server" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dab012b9-291c-4cd6-b9c8-5067519128e0" name="默认更改列表" comment="" />
+      <created>1576132372324</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576132372324</updated>
+      <workItem from="1576132388466" duration="13376000" />
+      <workItem from="1576207010186" duration="56000" />
+      <workItem from="1576476983034" duration="2926000" />
+      <workItem from="1576482084379" duration="5556000" />
+      <workItem from="1576489007622" duration="941000" />
+      <workItem from="1576492448546" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="886" y="288" key="FileChooserDialogImpl" timestamp="1576141092592">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="886" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576141092592" />
+    <state x="762" y="176" width="672" height="676" key="search.everywhere.popup" timestamp="1576141750405">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="762" y="176" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576141750405" />
+  </component>
+</project>
