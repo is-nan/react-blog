@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dab012b9-291c-4cd6-b9c8-5067519128e0" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/nanbk.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/AddAndSetArticle/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleFrom/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleTable/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin/Article/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin/Article/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin/Layouts/components/Contents/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin/Layouts/components/Headers/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin/Layouts/components/Siders/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin/Layouts/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin/Layouts/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleFrom/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleFrom/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Article/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +68,9 @@
       <workItem from="1576482084379" duration="5556000" />
       <workItem from="1576489007622" duration="941000" />
       <workItem from="1576492448546" duration="12000" />
+      <workItem from="1576825788466" duration="910000" />
+      <workItem from="1576828561888" duration="59000" />
+      <workItem from="1577347048883" duration="7444000" />
     </task>
     <servers />
   </component>
