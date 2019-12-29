@@ -1,29 +1,33 @@
-import React, {useState} from "react";
+import React, {useState,useContext} from "react";
 import {Input, Form, Tag, Icon, Select, DatePicker, Switch,Upload} from "antd";
 import '../../index.scss'
+import { ArticleData } from '../AddAndSetArticle'
+
 const { CheckableTag } = Tag;
 const {Option} = Select;
 function ArticleFrom() {
+    //使用共享数据
+  const {Data,setData}=useContext(ArticleData)
     return (
         <div className="From">
             <Form layout="inline">
                 <Form.Item label="标题">
-                    <Input placeholder="请输入标题" className="From_Input"/>
-                </Form.Item>
-                <Form.Item label="副标题">
-                    <Input placeholder="请输入副标题" className="From_Input"/>
+                    <Input placeholder="请输入标题" className="From_Input"
+                           defaultValue={Data.title}
+                           onChange={(e)=>{setData({...Data,title: e.target.value})}}/>
                 </Form.Item>
                 <Form.Item label="分类">
-                    <Tags />
+                    <Tags GetValue={(value)=>{setData({...Data,Category: value})}}/>
                 </Form.Item>
-                <Form.Item label={'多标签'}>
-                    <Tags />
+                <Form.Item label={'标签'}>
+                    <Tags GetValue={(value)=>{setData({...Data,TagName: value})}}/>
                 </Form.Item>
                 <Form.Item label="日期">
-                    <DatePicker showTime/>
+                    <DatePicker showTime onChange={(date,dataTime)=>{console.log(setData({...Data,createdAt:dataTime}))}}/>
                 </Form.Item>
                 <Form.Item label="状态">
-                    <Switch checkedChildren="发布" unCheckedChildren="草稿" defaultChecked/>
+                    <Switch checkedChildren="发布" unCheckedChildren="草稿" defaultChecked
+                            onChange={(checked)=>{setData({...Data,status:checked})}}/>
                 </Form.Item>
             </Form>
         </div>
@@ -43,14 +47,15 @@ function Tags(props) {
     const handleChange=(tag, checked)=>{
         const nextSelectedTags = checked ? [...TagsValue, tag] : TagsValue.filter(t => t !== tag);
         setTagsValue(nextSelectedTags);
+        props.GetValue(nextSelectedTags)
     }
     //点击添加时显示输入框
     const showInput = () => {
         setShow(true)
     };
-    //获取输入的内容
+    //获取选中的内容
     const handleInputChange = e => {
-        setAddTagsValue(e.target.value)
+      setAddTagsValue(e.target.value)
     };
     //回车确定添加标签
     const handleInputConfirm = () => {
