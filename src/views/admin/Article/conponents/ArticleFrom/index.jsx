@@ -1,7 +1,7 @@
 import React, {useState,useContext,useEffect} from "react";
 import {Input, Form, Tag, Icon, Select, DatePicker, Switch,Upload,Button} from "antd";
 import '../../index.scss'
-import { ArticleData } from '../AddAndSetArticle'
+import { ArticleData } from '../../index'
 
 const { CheckableTag } = Tag;
 const {Option} = Select;
@@ -81,6 +81,9 @@ function Tags(props) {
     const handleChange=(tag, checked)=>{
         const nextSelectedTags = checked ? [...TagsValue, tag] : TagsValue.filter(t => t !== tag);
         setTagsValue(nextSelectedTags);
+        setTimeout(()=>{
+          console.log(props.TagValue)
+        },1000)
         props.GetValue(nextSelectedTags)
     }
     useEffect(()=>{
