@@ -1,43 +1,40 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import { Table } from 'antd';
+import { GetReleaseArticle } from "../../../../../api/Article";
+
 const columns = [
     {
         title: '文章标题',
-        dataIndex: 'A',
-        key: 'A',
-    },
-    {
-        title: '副标题',
-        dataIndex: 'B',
-        key: 'B',
+        dataIndex: 'title',
     },
     {
         title: '作者',
-        dataIndex: 'C',
-        key: 'C',
+        dataIndex: 'id',
     },
     {
         title: '发布日期',
-        dataIndex: 'D',
-        key: 'D',
-    },
-    {
-        title: '发布时间',
-        dataIndex: 'E',
-        key: 'E',
+        dataIndex: 'createdTime',
     },
     {
         title: '状态',
-        dataIndex: 'F',
-        key: 'F',
+        dataIndex: 'status',
     },
     {
         title: '标签',
-        dataIndex: 'G',
+        dataIndex: 'id',
         key: 'G',
     }
 ];
 function ArticleTable(props) {
+    useEffect(()=>{
+        GetArticle()
+    },[])
+    const GetArticle=()=>{
+        GetReleaseArticle()
+            .then((res)=>{
+                setdata(res.data.data)
+            })
+    }
     //文章数据
     const [data,setdata]=useState([])
     return(

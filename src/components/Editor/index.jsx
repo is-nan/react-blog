@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useRef} from 'react'
 import Editors from 'for-editor'
 const toolbar={
   h1: true, // h1
@@ -18,8 +18,15 @@ const toolbar={
   subfield: true, // 单双栏模式
 }
 function Editor (props) {
+  const $vm = useRef(null);
+  const addImg=($file)=>{
+    $vm.current.$img2Url($file, 'http://localhost:9000/api/UploadImages')
+  }
   return (
-  <Editors value={props.value}
+  <Editors
+           ref={$vm}
+           value={props.value}
+           addImg={($file) => addImg($file)}
            onChange={(value) => {props.GetValue(value)}}
            toolbar={toolbar}
            onSave={()=>{alert(props.value)}}

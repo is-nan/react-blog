@@ -1,5 +1,5 @@
-import React, {useState,useContext} from "react";
-import {Input, Form, Tag, Icon, Select, DatePicker, Switch,Upload} from "antd";
+import React, {useState,useContext,useEffect} from "react";
+import {Input, Form, Tag, Icon, Select, DatePicker, Switch,Upload,Button} from "antd";
 import '../../index.scss'
 import { ArticleData } from '../AddAndSetArticle'
 
@@ -11,16 +11,21 @@ function ArticleFrom() {
   //封面上传配置
   const UploadConfig = {
         action: '/api/UploadImages',
-        listType: 'picture',
-        className: 'upload-list-inline',
+        listType: 'picture-card',
+        className: 'avatar-uploader',
         withCredentials:true,
-        beforeUpload:(file)=>{
-            setData({...Data,Cover:file})
-            return false
-        }
+        showUploadList:false
    }
+   //没有封面显示默认
+    const uploadButton = (
+        <div>
+            <Icon type="plus" />
+            <div className="ant-upload-text">上传</div>
+        </div>
+    );
     return (
         <div className="From">
+            {/*表单*/}
             <Form layout="inline">
                 <Form.Item label="标题">
                     <Input placeholder="请输入标题" className="From_Input"
@@ -28,23 +33,33 @@ function ArticleFrom() {
                            onChange={(e)=>{setData({...Data,title: e.target.value})}}/>
                 </Form.Item>
                 <Form.Item label="分类">
-                    <Tags GetValue={(value)=>{setData({...Data,Category: value})}}/>
+                    <Tags GetValue={(value)=>{setData({...Data,Category: value})}}
+                          TagsValue={['Movies']}/>
                 </Form.Item>
                 <Form.Item label={'标签'}>
-                    <Tags GetValue={(value)=>{setData({...Data,TagName: value})}}/>
+                    <Tags GetValue={(value)=>{setData({...Data,TagName: value})}}
+                          TagsValue={['Books']}/>
                 </Form.Item>
                 <Form.Item label="日期">
-                    <DatePicker showTime onChange={(date,dataTime)=>{console.log(setData({...Data,createdAt:dataTime}))}}/>
+                    <DatePicker showTime onChange={(date,dataTime)=>{setData({...Data,createdTime:dataTime})}}
+                                defaultValue={Data.createdTime}/>
                 </Form.Item>
                 <Form.Item label="状态">
                     <Switch checkedChildren="发布" unCheckedChildren="草稿" defaultChecked
                             onChange={(checked)=>{setData({...Data,status:checked})}}/>
                 </Form.Item>
+                <br />
                 <Form.Item label="封面">
-                    <Upload {...UploadConfig}>
-                        <Button>
-                            <Icon type="upload" /> Upload
-                        </Button>
+                    <Upload {...UploadConfig} beforeUpload={(file)=>{
+                    }}
+                            onSuccess={(res)=>{
+                                //上传成功
+                                if(res.code===0){
+                                    setData({...Data,Cover:res.data})
+                                }
+                            }}
+                    >
+                        {Data.Cover?<img src={Data.Cover} alt="avatar" style={{ width: '100%' }} />:uploadButton}
                     </Upload>
                 </Form.Item>
             </Form>
@@ -52,6 +67,7 @@ function ArticleFrom() {
     )
 }
 
+//标签组件
 function Tags(props) {
     //标签列表
     const [TagsList,setTagsList]=useState(['Movies', 'Books', 'Music', 'Sports'])
@@ -61,21 +77,24 @@ function Tags(props) {
     const [Show,setShow]=useState(false)
     //添加输入框内容
     const [AddTagsValue,setAddTagsValue]=useState('')
-    //添加事件
+    //获取到选中的标签数据列表
     const handleChange=(tag, checked)=>{
         const nextSelectedTags = checked ? [...TagsValue, tag] : TagsValue.filter(t => t !== tag);
         setTagsValue(nextSelectedTags);
         props.GetValue(nextSelectedTags)
     }
+    useEffect(()=>{
+        setTagsValue(props.TagsValue)
+    },[props])
     //点击添加时显示输入框
     const showInput = () => {
         setShow(true)
     };
-    //获取选中的内容
+    //获取添加显示的输入框内容
     const handleInputChange = e => {
       setAddTagsValue(e.target.value)
     };
-    //回车确定添加标签
+    //回车确定或失去焦点时添加标签至标签列表
     const handleInputConfirm = () => {
         if (AddTagsValue && TagsList.indexOf(AddTagsValue) === -1) {
             setTagsList([...TagsList, AddTagsValue]);
@@ -85,6 +104,7 @@ function Tags(props) {
     };
     return(
         <div>
+            {/*标签列表*/}
             {TagsList.map(tag => (
                 <CheckableTag
                     key={tag}
@@ -94,6 +114,7 @@ function Tags(props) {
                     {tag}
                 </CheckableTag>
             ))}
+            {/*添加显示输入框*/}
             {Show && (
                 <Input
                     type="text"
