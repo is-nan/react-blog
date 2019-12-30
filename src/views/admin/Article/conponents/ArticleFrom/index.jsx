@@ -8,6 +8,17 @@ const {Option} = Select;
 function ArticleFrom() {
     //使用共享数据
   const {Data,setData}=useContext(ArticleData)
+  //封面上传配置
+  const UploadConfig = {
+        action: '/api/UploadImages',
+        listType: 'picture',
+        className: 'upload-list-inline',
+        withCredentials:true,
+        beforeUpload:(file)=>{
+            setData({...Data,Cover:file})
+            return false
+        }
+   }
     return (
         <div className="From">
             <Form layout="inline">
@@ -28,6 +39,13 @@ function ArticleFrom() {
                 <Form.Item label="状态">
                     <Switch checkedChildren="发布" unCheckedChildren="草稿" defaultChecked
                             onChange={(checked)=>{setData({...Data,status:checked})}}/>
+                </Form.Item>
+                <Form.Item label="封面">
+                    <Upload {...UploadConfig}>
+                        <Button>
+                            <Icon type="upload" /> Upload
+                        </Button>
+                    </Upload>
                 </Form.Item>
             </Form>
         </div>
