@@ -2,7 +2,7 @@ import React, {useState,useContext,useEffect} from "react";
 import {Input, Form, Tag, Icon, Select, DatePicker, Switch,Upload,Button} from "antd";
 import '../../index.scss'
 import { ArticleData } from '../../index'
-
+import moment from 'moment';
 const { CheckableTag } = Tag;
 const {Option} = Select;
 function ArticleFrom() {
@@ -29,20 +29,26 @@ function ArticleFrom() {
             <Form layout="inline">
                 <Form.Item label="标题">
                     <Input placeholder="请输入标题" className="From_Input"
-                           defaultValue={Data.title}
+                           value={Data.title}
                            onChange={(e)=>{setData({...Data,title: e.target.value})}}/>
                 </Form.Item>
                 <Form.Item label="分类">
                     <Tags GetValue={(value)=>{setData({...Data,Category: value})}}
-                          TagsValue={['Movies']}/>
+                          TagsValue={Data.Category}/>
                 </Form.Item>
                 <Form.Item label={'标签'}>
                     <Tags GetValue={(value)=>{setData({...Data,TagName: value})}}
-                          TagsValue={['Books']}/>
+                          TagsValue={Data.TagName}/>
                 </Form.Item>
                 <Form.Item label="日期">
                     <DatePicker showTime onChange={(date,dataTime)=>{setData({...Data,createdTime:dataTime})}}
-                                defaultValue={Data.createdTime}/>
+                                value={moment(Data.createdTime)}/>
+                </Form.Item>
+                <Form.Item label="作者">
+                    <Select value={Data.Author} style={{ width: 120 }}>
+                        <Option value="南岸有归">南岸有归</Option>
+                        <Option value="转载">转载</Option>
+                    </Select>
                 </Form.Item>
                 <Form.Item label="状态">
                     <Switch checkedChildren="发布" unCheckedChildren="草稿" defaultChecked
@@ -81,9 +87,6 @@ function Tags(props) {
     const handleChange=(tag, checked)=>{
         const nextSelectedTags = checked ? [...TagsValue, tag] : TagsValue.filter(t => t !== tag);
         setTagsValue(nextSelectedTags);
-        setTimeout(()=>{
-          console.log(props.TagValue)
-        },1000)
         props.GetValue(nextSelectedTags)
     }
     useEffect(()=>{

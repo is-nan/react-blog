@@ -11,9 +11,27 @@ export function NewArticle (Article) {
 }
 
 //获取所有的文章列表
-export function GetReleaseArticle() {
+export function GetArticle() {
   return http({
-    url:'/api/GetReleaseArticle',
+    url:'/api/GetArticle',
     method: 'get'
+  })
+}
+
+//表格内修改文章状态
+export function UpdateArticleStatus(id,status) {
+  return http({
+    url:'/api/UpdateArticleStatus',
+    method:'post',
+    data:{id,status}
+  })
+}
+
+//修改文章
+export function UpdateArticle(Article) {
+  return http({
+    url:'/api/UpdateArticle',
+    method:'post',
+    data:{...Article,status:Article.status?1:2}
   })
 }
