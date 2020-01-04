@@ -5,7 +5,7 @@ import { ArticleData } from '../../index'
 import moment from 'moment';
 const { CheckableTag } = Tag;
 const {Option} = Select;
-function ArticleFrom() {
+function ArticleFrom(props) {
     //使用共享数据
   const {Data,setData}=useContext(ArticleData)
   //封面上传配置
@@ -34,7 +34,7 @@ function ArticleFrom() {
                 </Form.Item>
                 <Form.Item label="分类">
                     <Tags GetValue={(value)=>{setData({...Data,Category: value})}}
-                          TagsValue={Data.Category}/>
+                          TagsValue={Data.Category} TagsList={props.CategoryList}/>
                 </Form.Item>
                 <Form.Item label={'标签'}>
                     <Tags GetValue={(value)=>{setData({...Data,TagName: value})}}
@@ -76,7 +76,7 @@ function ArticleFrom() {
 //标签组件
 function Tags(props) {
     //标签列表
-    const [TagsList,setTagsList]=useState(['Movies', 'Books', 'Music', 'Sports'])
+    const [TagsList,setTagsList]=useState([])
     //选中标签
     const [TagsValue,setTagsValue]=useState([])
     //添加框显示隐藏

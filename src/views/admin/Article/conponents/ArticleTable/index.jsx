@@ -7,7 +7,6 @@ function ArticleTable(props) {
   //使用共享数据
   const {Data,setData}=useContext(ArticleData)
   //文章数据
-  const [data,setdata]=useState([])
   //表格格式与操作
   const columns = [
     {
@@ -19,23 +18,28 @@ function ArticleTable(props) {
       dataIndex: 'createdTime'
     },
     {
+      title:'作者',
+      dataIndex:'Author'
+    },
+    {
+      title:'分类',
+      dataIndex:'Categories',
+      render:(text, record)=>{
+        return (
+          record.Categories.map((val,index)=>{
+            return val.CategoryName
+          })
+        )
+      }
+    },
+    {
       title: '状态',
       dataIndex: 'status',
       key: 'index',
       render:(text, record,index)=>{
         return(
           <Switch defaultChecked checkedChildren="发布" unCheckedChildren="草稿" checked={record.status==1||record.status==true?true:false}
-          onChange={async ()=>{
-              await UpdateArticleStatus(record.id,record.status==1?2:1)
-                  .then((res)=>{
-                      if(res.data.code===0){
-                          message.success(res.data.mess);
-                      }else {
-                          message.error(res.data.mess);
-                      }
-                  })
-              await GetArticleList()
-          }}/>
+          onChange={()=>{props.UpArticleStatus(record)}}/>
         )
       }
     },
@@ -72,18 +76,9 @@ function ArticleTable(props) {
       }
     }
   ]
-    useEffect(()=>{
-        GetArticleList()
-    },[])
-    const GetArticleList=()=>{
-        GetArticle()
-            .then((res)=>{
-                setdata(res.data.data)
-            })
-    }
     return(
         <div>
-            <Table rowKey="id" dataSource={data} columns={columns} />
+            <Table rowKey="id" dataSource={props.data} columns={columns} />
         </div>
     )
 }

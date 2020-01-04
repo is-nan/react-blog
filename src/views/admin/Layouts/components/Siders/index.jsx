@@ -1,7 +1,10 @@
 import React from "react"
 import { Layout, Menu, Icon } from 'antd';
+import { useHistory } from "react-router-dom"
 const { Header, Sider, Content } = Layout;
+
 function Siders(props) {
+    const History=useHistory()
     return(
         <div>
             <Sider trigger={null} collapsible collapsed={props.collapsed}
@@ -10,15 +13,15 @@ function Siders(props) {
                 <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
                     <Menu.Item key="1">
                         <Icon type="user" />
-                        <span>nav 1</span>
+                        <span onClick={()=>{console.log(History.push('/admin/Article'))}}>文章管理</span>
                     </Menu.Item>
                     <Menu.Item key="2">
                         <Icon type="video-camera" />
-                        <span>nav 2</span>
+                        <span>留言/评论</span>
                     </Menu.Item>
                     <Menu.Item key="3">
                         <Icon type="upload" />
-                        <span>nav 3</span>
+                        <span>友情链接</span>
                     </Menu.Item>
                 </Menu>
             </Sider>
