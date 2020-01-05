@@ -10,7 +10,7 @@ function Tag (state=TagData,action) {
     case GETTAGLIST:
       return {
         ...state,
-        data:action.data
+        TagList:action.data
       }
     default:return state
   }
