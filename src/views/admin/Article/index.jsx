@@ -1,8 +1,8 @@
 import React, { createContext, useState,useEffect} from 'react'
 import ArticleTable from "./conponents/ArticleTable";
-import AddAndSetArticle from "./conponents/AddAndSetArticle";
+import ArticleModal from "./conponents/ArticleModal";
 import { Button ,message } from 'antd'
-import { NewArticle,UpdateArticle,GetArticle,UpdateArticleStatus} from '../../../api/Article'
+import { NewArticle,UpdateArticle,GetArticle,UpdateArticleStatus,DeleteArticle} from '../../../api/Article'
 import { ActionsGetTagList } from '../../../redux/actions/Tag'
 import { ActionsGetCategoryList } from '../../../redux/actions/Category'
 import { useDispatch } from 'react-redux'
@@ -37,10 +37,10 @@ function Article(props) {
       setvisible(!visible)
     }
   //新增文章
-  const handleCreate = () => {
+  const handleCreate =async () => {
         //Data.id存在为修改文章，不存在为新增文章
       if(Data.id===undefined){
-          NewArticle(Data)
+          await NewArticle(Data)
               .then((res)=>{
                   if(res.data.code===0){
                       message.success(res.data.mess);
@@ -50,7 +50,7 @@ function Article(props) {
                   }
               })
       }else if(Data.id!==undefined){
-          UpdateArticle(Data)
+          await UpdateArticle(Data)
               .then((res)=>{
                   if(res.data.code===0){
                       message.success(res.data.mess);
@@ -61,19 +61,31 @@ function Article(props) {
               })
       }
       //修改或新增文章后获取最新的文章列表
-    GetArticleList()
+    await GetArticleList()
   }
   //修改文章状态
-  const UpArticleStatus=async (record)=>{
-    await UpdateArticleStatus(record.id,record.status==1?2:1)
+  const UpArticleStatus=(record)=>{
+    UpdateArticleStatus(record.id,record.status==1?2:1)
       .then((res)=>{
         if(res.data.code===0){
           message.success(res.data.mess);
+          GetArticleList()
         }else {
           message.error(res.data.mess);
         }
       })
-    await GetArticleList()
+  }
+  //删除文章
+  const DeleArticle=(id)=>{
+    DeleteArticle(id)
+      .then((res)=>{
+        if(res.data.code===0){
+          message.success(res.data.mess);
+          GetArticleList()
+        }else {
+          message.error(res.data.mess);
+        }
+      })
   }
   //获取文章列表
   useEffect(()=>{
@@ -86,8 +98,13 @@ function Article(props) {
             </Button>
           {/*  共享数据*/}
           <ArticleData.Provider value={{Data, setData}}>
-            <ArticleTable AddAndSetArticleFun={AddAndSetArticleFun} GetArticleList={GetArticleList} data={List} UpArticleStatus={UpArticleStatus}/>
-            <AddAndSetArticle
+            <ArticleTable
+              AddAndSetArticleFun={AddAndSetArticleFun}
+              GetArticleList={GetArticleList}
+              data={List}
+              UpArticleStatus={UpArticleStatus}
+              DeleteArticle={DeleArticle}/>
+            <ArticleModal
               visible={visible}
               onCancel={AddAndSetArticleFun}
               onOk={AddAndSetArticleFun}

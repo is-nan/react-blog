@@ -35,3 +35,12 @@ export function UpdateArticle(Article) {
     data:{...Article,status:Article.status?1:2}
   })
 }
+
+//删除文章
+export function DeleteArticle (id) {
+  return http({
+    url:'/api/DeleteArticle',
+    method:'post',
+    data:{id}
+  })
+}

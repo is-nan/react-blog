@@ -5,7 +5,7 @@ import ArticleFrom from "../ArticleFrom";
 import Editor from '../../../../../components/Editor'
 import { ArticleData } from '../../index'
 
-function AddAndSetArticle(props) {
+function ArticleModal(props) {
   //使用共享数据
   const {Data,setData}=useContext(ArticleData)
     return(
@@ -29,4 +29,4 @@ function AddAndSetArticle(props) {
     )
 }
 
-export default AddAndSetArticle
+export default ArticleModal

@@ -68,9 +68,12 @@ function ArticleTable(props) {
                     TagName:record.Tags.map((val)=>{return val.TagName}),Cover:record.Cover,content:record.content,
                     Category:record.Categories.map((val)=>{return val.CategoryName}),createdTime:record.createdTime,
                 id:record.id})
-            }}>编辑{record.index}</Button>
+            }}>编辑</Button>
               <Divider type="vertical" />
-            <Button type="danger" size="small">删除{record.index}</Button>
+            <Button type="danger" size="small"
+            onClick={()=>{
+              props.DeleteArticle(record.id)
+            }}>删除</Button>
           </div>
         )
       }
