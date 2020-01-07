@@ -3,6 +3,7 @@ import './App.css';
 import 'antd/dist/antd.css';
 import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom'
 import Layouts from "./views/admin/Layouts";
+import Home from './views/Blog/Home/index'
 import store from './redux/index'
 import { Provider } from 'react-redux'
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Provider store={store}>
         <Router>
             <Switch>
+                <Route path='/'  component={Home}></Route>
                 <Route path='/admin'  component={Layouts}></Route>
             </Switch>
         </Router>
