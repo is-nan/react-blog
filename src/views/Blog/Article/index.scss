@@ -1,0 +1,29 @@
+.Article{
+  width: 70%;
+  .Data{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    .Data_Item__Title{
+      font-size: 1.5rem;
+      color: #cccccc;
+      margin-bottom: .2rem;
+      cursor: pointer;
+    }
+    .Data_Item__Excerpt{
+      font-size: .9rem;
+      color: #999999;
+      line-height: 1.7;
+    }
+    .Data_Item__Date{
+      margin-right:.5rem;
+      font-size: .8rem;
+      color: #c7c7c7;
+    }
+    .Data_Item__Tags{
+      margin:0 .5rem;
+      font-size: .8rem;
+      color: #c7c7c7;
+    }
+  }
+}

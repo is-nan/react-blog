@@ -44,3 +44,11 @@ export function DeleteArticle (id) {
     data:{id}
   })
 }
+
+//获取已发布的文章
+export function GetReleaseArticle () {
+  return http({
+    url:'/api/GetReleaseArticle',
+    method:'get'
+  })
+}
