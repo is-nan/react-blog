@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import './index.scss'
 import { GetReleaseArticle } from '../../../api/Article'
+import Information from '../Information/index'
 
 function Home (props) {
   const [Data,setData]=useState([])
@@ -13,9 +14,7 @@ function Home (props) {
   },[])
   return(
     <div style={{display:'flex'}}>
-    <div className="information">
-      <p>首页</p>
-    </div>
+    <Information />
     <div className="ArticleList">
       {
         Data.map((Item)=>{
