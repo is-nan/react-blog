@@ -1,0 +1,24 @@
+.Login{
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  height: 100vh;
+  width: 100%;
+  .Login_From{
+    width: 25vw;
+    margin: 0 auto;
+    padding-top: 35vh;
+    height: 15vh;
+    .Login_From__Title{
+      font-size: 2rem;
+      text-align: center;
+    }
+    .Login_From__Input{
+      width: 25vw;
+      display: block;
+      border-radius: 24px;
+    }
+    .Login_From__Button{
+      width: 25vw;
+      display: block;
+    }
+  }
+}

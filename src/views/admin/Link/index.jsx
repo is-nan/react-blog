@@ -1,82 +1,95 @@
-import React,{useEffect,useState,createContext} from 'react'
-import LinkModal from './components/LinkModal'
-import LinkTable from './components/LinkTable'
-import { Button,message } from 'antd'
-import { NewLink,DeleteLink,UpdateLink } from '../../../api/Link'
-import { ActionsGetLinkList } from '../../../redux/actions/Link'
-import { useDispatch } from 'react-redux'
-//定义全局共享数据
-export const LinkData=createContext()
-function Link (props) {
-  //实例化reudx
-  const Dispatch=useDispatch()
-  useEffect(()=>{
-    Dispatch(ActionsGetLinkList())
-  },[])
-  //显示隐藏对话框
-  const handleCancel=async (type=0)=>{
-    if(type===0){
-      await setData({name:'',url:'',email:''})
+import React, {  useState,useEffect,createContext } from 'react'
+import LinkTable from "./components/LinkTable";
+import AddAndSetLink from "./components/AddAndSetLink";
+import { GetLinkList,NewLink,UpdateLink,DeleteLink } from "../../../api/Link";
+import {Button, message} from "antd";
+
+export const LinkData=new createContext()
+function Link(props) {
+    //Context数据
+    const [Data,setData]=useState({name:'',email:'',url:''})
+    //表格数据
+    const [TableData,setTableData]=useState()
+    //获取友情链接
+    const GetLinkLists=()=>{
+        GetLinkList()
+            .then((res)=>{
+                setTableData(res.data.data)
+            })
     }
-    await setvisible(!visible)
-  }
-  //对话框控制变量
-  const [visible,setvisible]=useState(false)
-  const [Data,setData]=useState({name:'',url:'',email:''})
-  //添加修改友情链接
-  const AddAndSetLink=()=>{
-    console.log(Data.id)
-    if(Data.id===undefined){
-      NewLink(Data)
-        .then((res)=>{
-          if(res.data.code===0){
-            message.success(res.data.mess)
-            //清空表单
-            setData({name:'',url:'',email:''})
-            //隐藏对话框
-            handleCancel()
-          }
-          else if(res.data.code===1){
-            message.error(res.data.mess)
-          }
-        })
-    }else {
-      UpdateLink(Data)
-        .then((res)=>{
-          if(res.data.code===0){
-            message.success(res.data.mess)
-            //隐藏对话框
-            handleCancel()
-          }
-          else if(res.data.code===1){
-            message.error(res.data.mess)
-          }
-        })
+    useEffect(()=>{
+        GetLinkLists()
+    },[])
+    //弹出框显示控制变量
+    const [visible, setvisible] = useState(false)
+    //添加And修改弹出框
+    const AddAndSetLinkFun=(type=0)=>{
+        //type===0时新增友情链接
+        if(type!==0){
+            setData({name:'',email:'',url:''})
+        }
+        setvisible(!visible)
     }
-    Dispatch(ActionsGetLinkList())
-  }
-  //删除友情链接
-  const DeleLink=(id)=>{
-    DeleteLink(id)
-      .then((res)=>{
-        if(res.data.code===0){
-          message.success(res.data.mess)
-          Dispatch(ActionsGetLinkList())
+    //友情链接新增修改弹出框确定事件
+    const handleCreate=async ()=>{
+        //如果没有链接ID就是新增友情链接
+        if(!Data.id){
+           await NewLink(Data)
+                .then((res)=>{
+                    if (res.data.code === 0) {
+                        message.success(res.data.mess);
+                        AddAndSetLinkFun()
+                    } else {
+                        message.error(res.data.mess);
+                    }
+                })
+        }else {
+           await UpdateLink(Data)
+                .then((res)=>{
+                    if (res.data.code === 0) {
+                        message.success(res.data.mess);
+                        AddAndSetLinkFun()
+                    } else {
+                        message.error(res.data.mess);
+                    }
+                })
         }
-        else if(res.data.code===1){
-          message.error(res.data.mess)
-        }
-      })
-  }
-  return (
-    <div>
-      <Button type="primary" onClick={()=>{handleCancel()}}>新增</Button>
-      <LinkData.Provider value={{Data,setData}}>
-      <LinkModal visible={visible} handleOk={AddAndSetLink} handleCancel={handleCancel}/>
-      <LinkTable DeteleLink={DeleLink} handleCancel={handleCancel}/>
-      </LinkData.Provider>
-    </div>
-  )
+        await GetLinkLists()
+        setvisible(!visible)
+    }
+    //删除友情链接
+    const DeleteLinks=(id)=>{
+        DeleteLink(id)
+            .then((res)=>{
+                if (res.data.code === 0) {
+                    message.success(res.data.mess);
+                    GetLinkLists()
+                } else {
+                    message.error(res.data.mess);
+                }
+            })
+    }
+    return (
+        <div>
+            {/*新增友情链接按钮*/}
+            <Button type="primary" onClick={() => {
+                AddAndSetLinkFun(0)
+            }}>
+                新增
+            </Button>
+            {/*共享数据*/}
+            <LinkData.Provider value={{Data,setData}}>
+                <LinkTable data={TableData} AddAndSetLinkFun={AddAndSetLinkFun} DeleteLinks={DeleteLinks}/>
+                <AddAndSetLink
+                    visible={visible}
+                    onCancel={AddAndSetLinkFun}
+                    onOk={AddAndSetLinkFun}
+                    handleCreate={handleCreate}
+                />
+            </LinkData.Provider>
+        </div>
+    )
 }
+
 
 export default Link

@@ -1,15 +1,11 @@
 import React, {useState,useContext,useEffect} from "react";
-import {Input, Form, Tag, Icon, Select, DatePicker, Switch,Upload} from "antd";
+import {Input, Form, Tag, Icon, Select, DatePicker, Switch,Upload,Button} from "antd";
 import '../../index.scss'
 import { ArticleData } from '../../index'
 import moment from 'moment';
-import { useSelector} from 'react-redux'
-
 const { CheckableTag } = Tag;
 const {Option} = Select;
-function ArticleFrom(props) {
-  //获取reudx分类与标签数据
-  const store=useSelector(state=>{return {TagList:state.Tag.TagList,CategoryList:state.Category.CategoryList}})
+function ArticleFrom() {
     //使用共享数据
   const {Data,setData}=useContext(ArticleData)
   //封面上传配置
@@ -38,11 +34,11 @@ function ArticleFrom(props) {
                 </Form.Item>
                 <Form.Item label="分类">
                     <Tags GetValue={(value)=>{setData({...Data,Category: value})}}
-                          TagsValue={Data.Category} TagsList={store.CategoryList.map((val)=>{return val.CategoryName})}/>
+                          TagsValue={Data.Category}/>
                 </Form.Item>
                 <Form.Item label={'标签'}>
                     <Tags GetValue={(value)=>{setData({...Data,TagName: value})}}
-                          TagsValue={Data.TagName} TagsList={store.TagList.map((val)=>{return val.TagName})}/>
+                          TagsValue={Data.TagName}/>
                 </Form.Item>
                 <Form.Item label="日期">
                     <DatePicker showTime onChange={(date,dataTime)=>{setData({...Data,createdTime:dataTime})}}
@@ -80,7 +76,7 @@ function ArticleFrom(props) {
 //标签组件
 function Tags(props) {
     //标签列表
-    const [TagsList,setTagsList]=useState([])
+    const [TagsList,setTagsList]=useState(['Movies', 'Books', 'Music', 'Sports'])
     //选中标签
     const [TagsValue,setTagsValue]=useState([])
     //添加框显示隐藏
@@ -94,8 +90,6 @@ function Tags(props) {
         props.GetValue(nextSelectedTags)
     }
     useEffect(()=>{
-      console.log(props)
-        setTagsList(props.TagsList?props.TagsList:[])
         setTagsValue(props.TagsValue)
     },[props])
     //点击添加时显示输入框

@@ -1,27 +1,23 @@
 import React from "react"
-import { Layout, Menu, Icon } from 'antd';
-import { useHistory } from "react-router-dom"
-const { Header, Sider, Content } = Layout;
-
+import { Layout, Menu } from 'antd';
+import { useHistory } from "react-router-dom";
+const { Sider } = Layout;
 function Siders(props) {
-    const History=useHistory()
+    const history = useHistory()
     return(
         <div>
             <Sider trigger={null} collapsible collapsed={props.collapsed}
                    style={{ height:100+'vh'}}>
                 <div className="logo" />
                 <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-                    <Menu.Item key="1">
-                        <Icon type="user" />
-                        <span onClick={()=>{History.push('/admin/Article')}}>文章管理</span>
+                    <Menu.Item key="1" onClick={()=>{history.push('/admin/article')}}>
+                        <span>文章管理</span>
                     </Menu.Item>
-                    <Menu.Item key="2">
-                        <Icon type="video-camera" />
+                    <Menu.Item key="2" onClick={()=>{history.push('/admin/Comment')}}>
                         <span>留言/评论</span>
                     </Menu.Item>
-                    <Menu.Item key="3">
-                        <Icon type="upload" />
-                        <span onClick={()=>{History.push('/admin/Link')}}>友情链接</span>
+                    <Menu.Item key="3" onClick={()=>{history.push('/admin/Link')}}>
+                        <span>友情链接</span>
                     </Menu.Item>
                 </Menu>
             </Sider>

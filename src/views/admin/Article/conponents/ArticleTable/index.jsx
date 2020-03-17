@@ -7,6 +7,7 @@ function ArticleTable(props) {
   //使用共享数据
   const {Data,setData}=useContext(ArticleData)
   //文章数据
+  const [data,setdata]=useState([])
   //表格格式与操作
   const columns = [
     {
@@ -18,28 +19,13 @@ function ArticleTable(props) {
       dataIndex: 'createdTime'
     },
     {
-      title:'作者',
-      dataIndex:'Author'
-    },
-    {
-      title:'分类',
-      dataIndex:'Categories',
-      render:(text, record)=>{
-        return (
-          record.Categories.map((val,index)=>{
-            return val.CategoryName
-          })
-        )
-      }
-    },
-    {
       title: '状态',
       dataIndex: 'status',
       key: 'index',
       render:(text, record,index)=>{
         return(
           <Switch defaultChecked checkedChildren="发布" unCheckedChildren="草稿" checked={record.status==1||record.status==true?true:false}
-          onChange={()=>{props.UpArticleStatus(record)}}/>
+          onChange={()=>{props.TableArticleonChange(record)}}/>
         )
       }
     },
@@ -63,17 +49,14 @@ function ArticleTable(props) {
         return (
           <div>
             <Button type="primary" size="small" onClick={()=>{
-                props.AddAndSetArticleFun(1)
+                props.AddAndSetArticleFun()
                 setData({...Data,title:record.title,status:record.status===1?true:false,
                     TagName:record.Tags.map((val)=>{return val.TagName}),Cover:record.Cover,content:record.content,
                     Category:record.Categories.map((val)=>{return val.CategoryName}),createdTime:record.createdTime,
                 id:record.id})
-            }}>编辑</Button>
+            }}>编辑{record.index}</Button>
               <Divider type="vertical" />
-            <Button type="danger" size="small"
-            onClick={()=>{
-              props.DeleteArticle(record.id)
-            }}>删除</Button>
+            <Button type="danger" size="small">删除{record.index}</Button>
           </div>
         )
       }

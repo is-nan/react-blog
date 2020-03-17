@@ -2,7 +2,8 @@ import React from "react"
 import { Layout} from 'antd';
 import {Route, Switch} from 'react-router-dom'
 import Article from "../../../Article";
-import Link from '../../../Link'
+import Link from "../../../Link";
+import Comment from "../../../Comment";
 const { Content } = Layout;
 function Contents(props) {
     return(
@@ -18,6 +19,7 @@ function Contents(props) {
                 <Switch>
                     <Route path='/admin/Article' component={Article} exact></Route>
                     <Route path='/admin/Link' component={Link} exact></Route>
+                    <Route path='/admin/Comment' component={Comment} exact></Route>
                 </Switch>
             </Content>
         </div>
