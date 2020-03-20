@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dab012b9-291c-4cd6-b9c8-5067519128e0" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/http/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/http/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/云平台/cloud_frontend" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -52,7 +49,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -102,6 +99,7 @@
       <workItem from="1584499057364" duration="936000" />
       <workItem from="1584501048306" duration="3451000" />
       <workItem from="1584522473033" duration="14000" />
+      <workItem from="1584673477633" duration="4508000" />
     </task>
     <servers />
   </component>
@@ -129,10 +127,18 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="886" y="288" key="FileChooserDialogImpl" timestamp="1577758564112">
+    <state x="1018" y="349" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1584674181131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="886" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577758564112" />
+    <state x="1018" y="349" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584674181131" />
+    <state x="886" y="288" key="FileChooserDialogImpl" timestamp="1584682830700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="886" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584682830700" />
+    <state x="690" y="68" key="SettingsEditor" timestamp="1584674182702">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="68" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584674182702" />
     <state x="762" y="176" width="672" height="676" key="search.everywhere.popup" timestamp="1576141750405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
