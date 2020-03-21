@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import './index.scss'
 import { GetReleaseArticle } from '../../../api/Article'
-import Information from '../Information/index'
+import Information from '../../../components/Information/index'
 
 function Home (props) {
   const [Data,setData]=useState([])

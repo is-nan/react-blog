@@ -4,6 +4,14 @@
     <list default="true" id="dab012b9-291c-4cd6-b9c8-5067519128e0" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/ArtcileDetails/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/About/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/ArtcileDetails/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Article/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Article/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Error/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Error/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Information/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Information/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Information/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Information/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JSX file" />
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -53,6 +61,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\react\react-blog\src\components" />
       <recent name="E:\NewBlog\react-blog\src\views\Blog" />
       <recent name="E:\NewBlog\react-blog\src\assets\images" />
     </key>
@@ -100,18 +109,15 @@
       <workItem from="1584501048306" duration="3451000" />
       <workItem from="1584522473033" duration="14000" />
       <workItem from="1584673477633" duration="4508000" />
+      <workItem from="1584753315827" duration="7215000" />
+      <workItem from="1584770233011" duration="15000" />
+      <workItem from="1584781357029" duration="2373000" />
+      <workItem from="1584785348428" duration="1704000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/node_modules/.staging/wait-for-expect-a88cc6d3/lib/toBeInRangeMatcher.d.js" />
-        <option value="$PROJECT_DIR$/node_modules/.staging/wait-for-expect-a88cc6d3/lib/waitForExpect.spec.d.js" />
-        <option value="$PROJECT_DIR$/node_modules/.staging/wait-for-expect-a88cc6d3/lib/index.d.js" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -139,9 +145,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="68" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584674182702" />
-    <state x="762" y="176" width="672" height="676" key="search.everywhere.popup" timestamp="1576141750405">
+    <state x="537" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1584782075027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="762" y="176" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576141750405" />
+    <state x="537" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584782075027" />
   </component>
 </project>

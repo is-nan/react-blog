@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import './index.scss'
-import Information from '../Information/index'
+import Information from '../../../components/Information/index'
 function Article (props) {
   const [Data,setData]=useState()
   return (

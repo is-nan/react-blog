@@ -1,9 +1,8 @@
 import React,{ useEffect } from 'react'
-import BlogAvatar from '../../../assets/images/BlogAvatar.jpeg'
+import BlogAvatar from '../../assets/images/BlogAvatar.jpeg'
 import './index.scss'
 import { useSelector,useDispatch } from 'react-redux'
-import { ActionsGetLinkList } from '../../../redux/actions/Link'
-
+import { ActionsGetLinkList } from '../../redux/actions/Link'
 function Information (props) {
   //实例化redux
   const Dispatch=useDispatch()
@@ -32,7 +31,7 @@ function Information (props) {
       </div>
       <div className="Footer">
         <p> 本站由 @南岸有归 创建 </p>
-        <p>© 2018-{new Date().getFullYear()}. 湘ICP备18002965号-2</p>
+        <p>© 2018-{new Date().getFullYear()}. <a href="http://www.beian.miit.gov.cn">湘ICP备18002965号-2</a></p>
       </div>
     </div>
   )
