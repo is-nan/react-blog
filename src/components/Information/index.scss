@@ -1,9 +1,9 @@
 .information{
-  width: 29.9%;
+  width: 35%;
   height: 100vh;
-  background-color: #333333;
-  padding-top: 25vh;
-  border-right:1px solid #ffffff;
+  padding-top: 30vh;
+  background-size:cover;
+  background-image: url("http://www.images.nanbk.com/images/2020/03/22/4k_440_.jpg");
   .BloggerAvatarCon{
     width: 5rem;
     height: 5rem;
@@ -11,28 +11,29 @@
     border-radius: 50%;
     margin: 0 auto;
     .BloggerAvatarCon__Avatar{
-      width: 4.8rem;
-      height: 4.8rem;
-      margin: 0.1rem;
+      width: 5rem;
+      height: 5rem;
       border-radius: 50%;
     }
   }
   .Readme{
+    width: 90%;
+    margin: 0 auto;
     .Readme_Name{
       color: #ffffff;
       text-align: center;
       margin-top: 0.5rem;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
     .Readme_Subtitle{
       color: #ffffff;
       text-align: center;
-      font-size: 1rem;
+      font-size: .8rem;
     }
     .Readme_Occupation{
       color: #ffffff;
       text-align: center;
-      font-size: 1rem;
+      font-size: .8rem;
     }
   }
   .Link{
@@ -53,8 +54,14 @@
     }
   }
   .Footer{
-    font-size: .8rem;
-    color: #ffffff;
+    margin-top: 40vh;
+    width: 100%;
+    font-size: .9rem;
+    color: rgba(255,255,255,0.75);
     text-align: center;
+    padding: 1rem 0rem;
+    p{
+      margin: 0 auto;
+    }
   }
 }

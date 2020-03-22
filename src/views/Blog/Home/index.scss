@@ -1,54 +1,80 @@
 .ArticleList{
   padding-top:50px;
-  width: 70%;
+  width: 65%;
   height: 100vh;
   overflow-y: scroll;
   .ArticleList_Item{
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 5vh auto;
     overflow: hidden;
+    .ArticleList_Item__cover{
+      border-radius: 3px;
+      transition: box-shadow 1s ease-out;
+      display: inline-block;
+      width: 28%;
+      margin-left: 4%;
+      float: right;
+      position: relative;
+      height: 11.5rem;
+      margin-top: 10px;
+      background-size:100% 100%;
+      transition-delay: .2s;
+    }
+    .ArticleList_Item__Article{
+      width: 68%;
+      float: left;
     .ArticleList_Item__Title{
-      font-size: 1.5rem;
-      color: #cccccc;
+      font-size: 1.8rem;
       margin-bottom: .2rem;
       cursor: pointer;
-      font-weight: 100;
+      font-weight: bold;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
       &:hover{
         color: #d66d74;
       }
     }
     .ArticleList_Item__Excerpt{
-      font-size: .9rem;
-      color: #999999;
+      font-size: 1rem;
+      color: #555555;
       line-height: 1.7;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
     .ArticleList_Item__Date{
       margin-right:.5rem;
-      font-size: .8rem;
-      color: #c7c7c7;
+      font-size: .9rem;
+      color: #888888;
     }
     .ArticleList_Item__Tags{
       margin:0 .5rem;
-      font-size: .8rem;
-      color: #c7c7c7;
+      font-size: .9rem;
+      color: #888888;
     }
     .ArticleList_Item__ContinueReading{
       border: 1px solid #c0363f;
       border-radius: 20px;
       padding: 6px 8px;
-      font-size: .8rem;
+      font-size: .9rem;
       margin-left: 10px;
       color: #c0363f;
       &:hover{
-        color: #1890ff;
+        color: #000000;
         cursor: pointer;
       }
     }
     .ArticleList_Item__divider{
-      border-top: 0.5px solid #999999;
-      width: 30%;
+      border-top: 0.1px solid #999999;
+      width: 100%;
       float: left;
       margin: 2rem 0rem;
+    }
     }
     }
   }

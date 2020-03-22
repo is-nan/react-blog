@@ -1,5 +1,4 @@
 import React,{ useEffect } from 'react'
-import BlogAvatar from '../../assets/images/BlogAvatar.jpeg'
 import './index.scss'
 import { useSelector,useDispatch } from 'react-redux'
 import { ActionsGetLinkList } from '../../redux/actions/Link'
@@ -14,21 +13,21 @@ function Information (props) {
   return(
     <div className="information">
       <div className="BloggerAvatarCon">
-        <img src={BlogAvatar} className="BloggerAvatarCon__Avatar" />
+        <img src="http://www.images.nanbk.com/images/2020/03/12/15652482794301084.jpg" className="BloggerAvatarCon__Avatar" />
       </div>
       <div className="Readme">
         <h2 className="Readme_Name">南岸有归</h2>
-        <p className="Readme_Subtitle">行路有良友，便是捷径。带上我吧，一起去看更大的世界。</p>
         <p className="Readme_Occupation">嗨，我是南岸有归，一名 前端 开发者。</p>
+        <p className="Readme_Subtitle">行路有良友，便是捷径。带上我吧，一起去看更大的世界。</p>
       </div>
-      <div className="Link">
-        <p className="name">友情链接</p>
-        {
-          store.LinkList.map((val,index)=>{
-            return <a className="Link_Item" key={val.id} onClick={()=>{window.open(val.url, '_blank')}}>{val.name}</a>
-          })
-        }
-      </div>
+      {/*<div className="Link">*/}
+        {/*<p className="name">友情链接</p>*/}
+        {/*{*/}
+          {/*store.LinkList.map((val,index)=>{*/}
+            {/*return <a className="Link_Item" key={val.id} onClick={()=>{window.open(val.url, '_blank')}}>{val.name}</a>*/}
+          {/*})*/}
+        {/*}*/}
+      {/*</div>*/}
       <div className="Footer">
         <p> 本站由 @南岸有归 创建 </p>
         <p>© 2018-{new Date().getFullYear()}. <a href="http://www.beian.miit.gov.cn">湘ICP备18002965号-2</a></p>

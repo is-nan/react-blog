@@ -1,6 +1,7 @@
 html{
     font-size: 16px;
+    background-color: #FAFBFF;
 }
 body{
-font-family: 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"opensans","Optima","Microsoft Yahei",sans-serif;
 }
