@@ -2,7 +2,7 @@ import React,{ lazy,Suspense } from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
 import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom'
-import router from "./router";
+import { Blog,BlogRouter,Admin } from "./router";
 import store from './redux/index'
 import { Provider } from 'react-redux'
 const Layouts=lazy(() => import('./views/admin/Layouts'))
@@ -15,20 +15,15 @@ function App() {
             <Suspense fallback={<div></div>}>
             <Switch>
                 {/*后台路由*/}
-                <Route path={router.AdminRouter.path}>
-                    <Layouts>
-                    {router.AdminRouter.children.map((Item,index)=>{
-                        return <Route path={Item.path}  key={index} component={Item.component}/>
-                    })}
-                    </Layouts>
-                    <Redirect from="*" to="/404"></Redirect>
-                </Route>
+                <Route path={Admin.path} component={Admin.component}/>
                 {/*博客路由*/}
+                <Route path={Blog.path} component={Blog.component} exact/>
                 {
-                    router.BlogRouter.map((Item,index)=>{
-                        return <Route path={Item.path} exact  key={index} component={Item.component}/>
+                    BlogRouter.map((Item,index)=>{
+                        return <Route path={Item.path} component={Item.component} key={index} exact/>
                     })
                 }
+                <Redirect from="*" to="/404"></Redirect>
             </Switch>
             </Suspense>
         </Router>
