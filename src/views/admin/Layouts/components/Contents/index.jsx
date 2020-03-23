@@ -1,9 +1,8 @@
 import React from "react"
 import { Layout} from 'antd';
-import {Route, Switch} from 'react-router-dom'
-import Article from "../../../Article";
-import Link from "../../../Link";
-import Comment from "../../../Comment";
+import {Route, Switch,Redirect} from 'react-router-dom'
+import { AdminRouter } from "../../../../../router";
+
 const { Content } = Layout;
 function Contents(props) {
     return(
@@ -17,9 +16,12 @@ function Contents(props) {
                 }}
             >
                 <Switch>
-                    <Route path='/admin/Article' component={Article} exact></Route>
-                    <Route path='/admin/Link' component={Link} exact></Route>
-                    <Route path='/admin/Comment' component={Comment} exact></Route>
+                    {
+                        AdminRouter.map((Item,index)=>{
+                            return <Route path={Item.path} component={Item.component}/>
+                        })
+                    }
+                    <Redirect from="*" to="/404"></Redirect>
                 </Switch>
             </Content>
         </div>
