@@ -1,8 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import { Input,Button,Comment, Avatar,Empty,Tooltip,message } from 'antd';
 import  './index.scss'
 import { NewComment } from "../../api/Comment";
-
+import Moment from 'react-moment';
+import moment from 'moment'
+moment.locale()
 const { TextArea } = Input;
 function Comments(props) {
     //评论人信息
@@ -11,15 +13,27 @@ function Comments(props) {
     })
     //新增评论/留言
     const AddComment=()=>{
-        NewComment(CommentUser)
-            .then((res)=>{
-                if (res.data.code === 0) {
-                    message.success(res.data.mess);
-                } else {
-                    message.error(res.data.mess);
-                }
-            })
+        if(CommentUser.username==''||CommentUser.content==''){
+            message.error('必填项不能为空哦!');
+        }else {
+            NewComment(CommentUser)
+                .then((res)=>{
+                    if (res.data.code === 0) {
+                        props.GetData()
+                        message.success(res.data.mess);
+                        setCommentUser({...CommentUser,content:'',username:'',Avatar:'',url:'',email:'',CommentId:null})
+                    } else {
+                        message.error(res.data.mess);
+                    }
+                })
+        }
     }
+    useEffect(()=>{
+        if(props.ArticleId){
+            console.log(props.ArticleId)
+            setCommentUser({...CommentUser,ArticleId:props.ArticleId})
+        }
+    },[props.ArticleId])
     return (
         <div className="Comment">
             {/*留言/评论输入框*/}
@@ -38,7 +52,7 @@ function Comments(props) {
                    onChange={(e)=>{setCommentUser({...CommentUser,url:e.target.value})}}
             />
             <div className="Comment-Input"></div>
-            <TextArea placeholder="写下您的评论~"
+            <TextArea placeholder="写下您的评论~(必填)"
                       value={CommentUser.content}
                       onChange={(e)=>{setCommentUser({...CommentUser,content:e.target.value})}}
             />
@@ -49,22 +63,26 @@ function Comments(props) {
             <div>
             {/*    留言/评论列表*/}
             {
-                props.data.length>0?props.data.map((Item,index)=>{
+                props.data&&props.data.length>0?props.data.map((Item,index)=>{
                     return (
-
                         <Comment
-                            actions={[<span>回复</span>]}
+                            actions={[<span
+                                onClick={()=>{setCommentUser({...CommentUser,content:`@${Item.username} `,CommentId:Item.id})}}
+                            >回复</span>]}
                             author={<a className="LeaveComponent-Username">{Item.username}</a>}
                             avatar={
-                                <Avatar src={Item.Avatar?Item.Avatar:'http://www.images.nanbk.com/image/Jxq'} alt="Han Solo"/>
+                                <Avatar src={Item.Avatar?Item.Avatar:'https://www.nanbk.com/static/media/e9978955638ca71877822b0c4d23913c.25f9fe7a.png'} alt="Han Solo"/>
                             }
                             content={<p>{Item.content}</p>}
                             datetime={
-                                <Tooltip title={Item.Time}>
-                                    <span>{Item.Time}</span>
-                                </Tooltip>
+                                // <Tooltip title={Item.updatedAt}>
+                                //
+                                // </Tooltip>
+                                <span>
+                                    {Item.createdAt}
+                                </span>
                             }
-                            key={Item._id}
+                            key={Item.id}
                         >
                         </Comment>
 

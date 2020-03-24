@@ -1,5 +1,6 @@
 import React, {useState,useContext,useEffect} from "react";
 import {Input, Form, Tag, Icon, Select, DatePicker, Switch,Upload,Button} from "antd";
+import { GetToken } from '../../../../../cookie/index'
 import '../../index.scss'
 import { ArticleData } from '../../index'
 import moment from 'moment';
@@ -14,7 +15,8 @@ function ArticleFrom() {
         listType: 'picture-card',
         className: 'avatar-uploader',
         withCredentials:true,
-        showUploadList:false
+        showUploadList:false,
+        headers:{Authorization:'Bearer ' + GetToken()}
    }
    //没有封面显示默认
     const uploadButton = (

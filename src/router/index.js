@@ -1,10 +1,10 @@
 /*
  * @Author: 南岸有归
  * @Date: 2020/3/20
- * @LastEditTime: 2020/3/20
+ * @LastEditTime: 2020-03-24 16:05:27
  * @LastEditors: 南岸有归
  * @Description: 路由配置文件
- * @FilePath: D:\react\react-blog\src\router\index.js
+ * @FilePath: \cloud_frontendd:\react\react-blog\src\router\index.js
  * @
  */
 import React,{lazy} from 'react';
@@ -18,12 +18,16 @@ const AdminComment = lazy(() => import('../views/admin/Comment'))
 const AdminLink = lazy(() => import('../views/admin/Link'))
 const Error = lazy(() => import('../components/Error'))
 const About = lazy(() => import('../views/Blog/About'))
+const Archive = lazy(()=> import('../views/Blog/Archive'))
+const ArticleDetails = lazy(() => import('../views/Blog/ArticleDetails'))
 //博客页面路由
 export const Blog = {path: '/', component: Home}
 export const BlogRouter = [
     {path: '/Article', component: Article},
     {path: '/Login', component: Login},
-    {path: '/About',component: About },
+    {path: '/About',component: About},
+    {path: '/Archive',component: Archive},
+    {path: '/ArticleDetails/:id',component: ArticleDetails},
     {path: '*', component: Error}
 ]
 //后台页面路由
