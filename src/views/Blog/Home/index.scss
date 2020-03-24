@@ -1,11 +1,5 @@
 .ArticleList{
-  padding-top:50px;
-  width: 65%;
-  height: 100vh;
-  overflow-y: scroll;
   .ArticleList_Item{
-    width: 80%;
-    margin: 0 auto 5vh auto;
     overflow: hidden;
     .ArticleList_Item__cover{
       border-radius: 3px;
