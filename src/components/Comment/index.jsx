@@ -1,12 +1,23 @@
+/*
+ * @Author: 南岸有归
+ * @Date: 2020/3/26
+ * @LastEditTime: 2020/3/26
+ * @LastEditors: 南岸有归
+ * @Description: 留言/评论组件：接收一个data:Array,接收一个GetData:Function,接收一个ArticleId:Number,ArticleId不传为博客留言
+ * @FilePath: D:\react\react-blog\src\components\Comment\index.jsx
+ * @
+ */
 import React, {useState,useEffect} from 'react'
 import { Input,Button,Comment, Avatar,Empty,Tooltip,message } from 'antd';
 import  './index.scss'
 import { NewComment } from "../../api/Comment";
-import Moment from 'react-moment';
-import moment from 'moment'
+import moment from 'moment';
+import 'moment/locale/zh-cn';
+import { useLocation } from "react-router-dom";
 moment.locale()
 const { TextArea } = Input;
 function Comments(props) {
+    const Location=useLocation()
     //评论人信息
     const [CommentUser,setCommentUser]=useState({
         content:'',username:'',Avatar:'',url:'',email:'',ArticleId:null,CommentId:null
@@ -20,10 +31,10 @@ function Comments(props) {
                 .then((res)=>{
                     if (res.data.code === 0) {
                         props.GetData()
-                        message.success(res.data.mess);
+                        message.success(Location.pathname=='/Messages'?'留言':'评论'+res.data.mess);
                         setCommentUser({...CommentUser,content:'',username:'',Avatar:'',url:'',email:'',CommentId:null})
                     } else {
-                        message.error(res.data.mess);
+                        message.error(Location.pathname=='/Messages'?'留言':'评论'+res.data.mess);
                     }
                 })
         }
@@ -40,56 +51,54 @@ function Comments(props) {
             <Input placeholder="称呼 (必填)"
                    value={CommentUser.username}
                    onChange={(e)=>{setCommentUser({...CommentUser,username:e.target.value})}}
+                   className="Comment_Input"
             />
-            <div className="Comment-Input" ></div>
             <Input placeholder="邮箱 (选填，方便联系您，不会公开)"
                    value={CommentUser.email}
                    onChange={(e)=>{setCommentUser({...CommentUser,email:e.target.value})}}
+                   className="Comment_Input"
             />
-            <div className="Comment-Input" ></div>
             <Input placeholder="个人网址 (选填)"
                    value={CommentUser.url}
                    onChange={(e)=>{setCommentUser({...CommentUser,url:e.target.value})}}
+                   className="Comment_Input"
             />
-            <div className="Comment-Input"></div>
             <TextArea placeholder="写下您的评论~(必填)"
                       value={CommentUser.content}
                       onChange={(e)=>{setCommentUser({...CommentUser,content:e.target.value})}}
             />
-            <div className="Comment-Input"></div>
-            <div className="Comment-Button">
-                <Button type="primary" onClick={AddComment}>发送</Button>
+                <Button type="primary" onClick={AddComment} className="Comment_Button">发送</Button>
+            <div className="Comment_Blank">
+
             </div>
-            <div>
             {/*    留言/评论列表*/}
             {
                 props.data&&props.data.length>0?props.data.map((Item,index)=>{
                     return (
                         <Comment
+                            className="Comment_List"
                             actions={[<span
                                 onClick={()=>{setCommentUser({...CommentUser,content:`@${Item.username} `,CommentId:Item.id})}}
                             >回复</span>]}
-                            author={<a className="LeaveComponent-Username">{Item.username}</a>}
+                            author={<a className="Comment_List__Username">{Item.username}</a>}
                             avatar={
-                                <Avatar src={Item.Avatar?Item.Avatar:'https://www.nanbk.com/static/media/e9978955638ca71877822b0c4d23913c.25f9fe7a.png'} alt="Han Solo"/>
+                                <Avatar src={Item.Avatar?Item.Avatar:'http://www.images.nanbk.com/images/2020/03/25/iiyf1hatsit.jpg'} alt="Han Solo"/>
                             }
-                            content={<p>{Item.content}</p>}
+                            content={<p className="Comment_List__Content">{Item.content}</p>}
                             datetime={
-                                // <Tooltip title={Item.updatedAt}>
-                                //
-                                // </Tooltip>
-                                <span>
-                                    {Item.createdAt}
+                                <Tooltip title={moment(Item.createdAt).startOf('second').fromNow()}>
+                                    <span className="Comment_List__Time">
+                                    {moment(Item.createdAt).startOf('second').fromNow()}
                                 </span>
+                                </Tooltip>
                             }
                             key={Item.id}
                         >
                         </Comment>
 
                     )
-                }):<Empty description="等你来评论~" />
+                }):<Empty description={`等你来${Location.pathname=='/Messages'?'留言':'评论'}~`} />
             }
-            </div>
         </div>
     )
 }

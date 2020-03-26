@@ -12,16 +12,15 @@ function Contents(props) {
                     margin: '24px 16px',
                     padding: 24,
                     background: '#fff',
-                    minHeight: 85+'vh'
+                    height: 85+'vh'
                 }}
             >
                 <Switch>
                     {
                         AdminRouter.map((Item,index)=>{
-                            return <Route path={Item.path} component={Item.component}/>
+                            return <Route path={Item.path} component={Item.component} key={index} exact/>
                         })
                     }
-                    <Redirect from="*" to="/404"></Redirect>
                 </Switch>
             </Content>
         </div>

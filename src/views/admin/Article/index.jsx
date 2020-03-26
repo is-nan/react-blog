@@ -14,7 +14,7 @@ function Article(props) {
     }
     //Context数据
     const [Data, setData] = useState({
-        title: '', createdTime: null, Category: [],
+        title: '', createdTime: new Date(), Category: [],
         status: true, TagName: [], Cover: null, content: '', Author: '南岸有归'
     })
     //文章表格数据
@@ -45,9 +45,8 @@ function Article(props) {
     const AddAndSetArticleFun = (type = 0) => {
         //type===0为新文章type===1为修改文章
         if (type === 0) {
-            console.log('新增')
             setData({
-                ...Data, title: '', createdTime: null, Category: [],
+                title: '', createdTime: new Date(), Category: [],
                 status: true, TagName: [], Cover: null, content: '', Author: '南岸有归'
             })
         }

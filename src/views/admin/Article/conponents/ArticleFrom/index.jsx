@@ -29,16 +29,17 @@ function ArticleFrom() {
         <div className="From">
             {/*表单*/}
             <Form layout="inline">
-                <Form.Item label="标题">
-                    <Input placeholder="请输入标题" className="From_Input"
+                <Form.Item label="标题" className="From_Item">
+                    <Input placeholder="请输入标题"
+                           className="From_Item_Input"
                            value={Data.title}
                            onChange={(e)=>{setData({...Data,title: e.target.value})}}/>
                 </Form.Item>
-                <Form.Item label="分类">
+                <Form.Item label="分类" className="From_Item">
                     <Tags GetValue={(value)=>{setData({...Data,Category: value})}}
                           TagsValue={Data.Category}/>
                 </Form.Item>
-                <Form.Item label={'标签'}>
+                <Form.Item label="标签" className="From_Item">
                     <Tags GetValue={(value)=>{setData({...Data,TagName: value})}}
                           TagsValue={Data.TagName}/>
                 </Form.Item>
@@ -57,8 +58,10 @@ function ArticleFrom() {
                             onChange={(checked)=>{setData({...Data,status:checked})}}/>
                 </Form.Item>
                 <br />
-                <Form.Item label="封面">
-                    <Upload {...UploadConfig} beforeUpload={(file)=>{
+                <Form.Item label="封面" className="From_Item">
+                    <Upload
+                        className="From_UploadButton"
+                        {...UploadConfig} beforeUpload={(file)=>{
                     }}
                             onSuccess={(res)=>{
                                 //上传成功

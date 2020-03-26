@@ -13,9 +13,12 @@ import { useParams } from 'react-router-dom'
 import { Icon } from 'antd';
 import Comment from '../../../components/Comment'
 import './index.scss'
-import * as Remarkable from 'remarkable'
 import marked from 'marked';
+import 'highlight.js/styles/tomorrow-night.css';
 import hljs from 'highlight.js';
+import moment from 'moment';
+import 'moment/locale/zh-cn';
+moment.locale()
 //阿里icon自定义图标
 const IconFont = Icon.createFromIconfontCN({
  scriptUrl: '//at.alicdn.com/t/font_1710871_fzogmiqut6k.js',
@@ -30,7 +33,6 @@ const IconFont = Icon.createFromIconfontCN({
    const GetArticleDetails=()=>{
    GetArticleDetailsAndComment(id)
     .then((res)=>{
-     console.log(res.data.data)
       //文章数据与评论数据赋值
       setArticleData(res.data.data.Article[0])
       setCommentData(res.data.data.Comment)
@@ -54,7 +56,7 @@ const IconFont = Icon.createFromIconfontCN({
    },[])
   return (
     <div className="ArticleDetails">
-     <p>{ArticleData.title}</p>
+     <p className="ArticleDetails_Title">{ArticleData.title}</p>
         <div className="content">
             <div
                 id="content"
@@ -66,7 +68,7 @@ const IconFont = Icon.createFromIconfontCN({
         </div>
       {/* 评论组件 */}
      <span><IconFont type="icon-taiyang" className="ArticleDetails_Icon" /></span>
-     <span className="ArticleDetails_Tag">{ArticleData.createdTime}</span>
+     <span className="ArticleDetails_Tag">{moment(ArticleData.createdTime).add(10, 'days').calendar()}</span>
      {
 
      }
@@ -85,6 +87,7 @@ const IconFont = Icon.createFromIconfontCN({
        return <span className="ArticleDetails_Tag" key={index}>{Items.TagName}</span>
       })
      }
+      <div className="ArticleDetails_FooterBd"></div>
       <Comment data={CommentData} ArticleId={ArticleData.id} GetData={GetArticleDetails}/>
     </div>
   )

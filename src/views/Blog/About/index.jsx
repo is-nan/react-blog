@@ -4,12 +4,11 @@ function About (props) {
     return (
         <div className="About">
             <h3 className="About-Title">很高兴认识你</h3>
-            <p className="About-Text">初中时接触网页,大学机缘巧合之下选了计算机专业.</p>
-            <p className="About-Text">写代码呢应该就像解数学题一样吧,把一个个问题给解决.</p>
-            <p className="About-Text">19年毕业,时间过的好快啊,从去年暑假来深圳实习,9月回学校.</p>
-            <p className="About-Text">11月又出来工作了,到现在已经快9个月了.</p>
-            <p className="About-Text">从使用jq写的博客,到暑假接触vue用vue和node与mongodb写的博客.</p>
-            <p className="About-Text">到现在使用react做的博客,你现在看到的是第三版了.</p>
+            <p className="About-Text">坐标深圳.</p>
+            <p className="About-Text">是一名前端开发者.</p>
+            <p className="About-Text">19年毕业,2018年12月开始工作,到现在快有一年半了.</p>
+            <p className="About-Text">博客使用过vue、mongodb、express写过.</p>
+            <p className="About-Text">现在这版是使用的react、后端使用的typescript、koa2、mysql开发的.</p>
             <h3 className="About-Title">熟悉的一些技术</h3>
             <ul>
                 <li>

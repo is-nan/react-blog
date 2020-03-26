@@ -11,8 +11,6 @@ import React, { lazy } from 'react';
 //通过 lazy实现路由懒加载
 const Home = lazy(() =>
     import ('../views/Blog/Home'))
-const Article = lazy(() =>
-    import ('../views/Blog/Article'))
 const Login = lazy(() =>
     import ('../views/Blog/Login'))
 const Layouts = lazy(() =>
@@ -33,6 +31,7 @@ const ArticleDetails = lazy(() =>
     import ('../views/Blog/ArticleDetails'))
 const Layout = lazy(() =>
         import ('../views/Blog/Layouts'))
+const Messages = lazy(()=>import ('../views/Blog/Messages'))
     //博客页面路由
 export const Blog = {
     path: '/',
@@ -40,11 +39,12 @@ export const Blog = {
 }
 export const BlogRouter = [
         { path: '/Home', component: Home },
-        { path: '/Article', component: Article },
         { path: '/Login', component: Login },
         { path: '/About', component: About },
         { path: '/Archive', component: Archive },
-        { path: '/ArticleDetails/:id', component: ArticleDetails }
+        { path: '/ArticleDetails/:id', component: ArticleDetails },
+        { path: '/Messages',component:Messages },
+        { path: '*', component: Error }
     ]
     //后台页面路由
 export const Admin = {

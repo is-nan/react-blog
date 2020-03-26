@@ -1,8 +1,8 @@
 .From{
-  .From_Input{
-    width: 100%;
-  }
-  .From_Select{
-    width: 100%;
+  .From_Item{
+    display: block;
+    .From_Item_Input{
+      width: 20rem;
+    }
   }
 }

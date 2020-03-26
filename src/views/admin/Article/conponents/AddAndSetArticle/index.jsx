@@ -12,7 +12,7 @@ function AddAndSetArticle(props) {
         <div>
             {/*文章新增修改弹出框*/}
             <Modal
-                title="新增"
+                title={Data.id?'编辑':'新增'}
                 width={100+'vw'}
                 visible={props.visible}
                 onCancel={props.onCancel}

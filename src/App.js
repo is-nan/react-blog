@@ -16,22 +16,23 @@ import {
   Redirect,
   Switch
 } from "react-router-dom";
-import { Blog, BlogRouter, Admin } from "./router";
+import { Blog, Admin } from "./router";
 import store from "./redux/index";
 import { Provider } from "react-redux";
-
-const Layouts = lazy(() => import("./views/admin/Layouts"));
-
+import Loading from "./components/Loading";
+const NavTabs = lazy(()=>import ('./components/NavTabs'))
+// const Loading = lazy(()=>import ('./components/Loading'))
 function App() {
   return (
     <div className="App">
       <Provider store={store}>
         <Router>
           {/*路由过渡动画*/}
-          <Suspense fallback={<div> </div>}>
+          <Suspense fallback={<div><Loading /></div>}>
             <Switch>
               {/*后台路由*/}
-              <Route path={Admin.path} component={Admin.component} exact />
+              <Route path={Admin.path} component={Admin.component} />
+              <Route path="/NavTabs" component={NavTabs}/>
               {/*博客路由*/}
               <Route path={Blog.path} component={Blog.component} />
             </Switch>

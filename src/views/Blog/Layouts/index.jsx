@@ -10,11 +10,15 @@
 import React from "react";
 import Contents from "./Contents";
 import Information from "../../../components/Information";
+import NavTabs from '../../../components/NavTabs'
 function Layout() {
   return (
     <div style={{ display: "flex" }}>
       <Information />
+      <div style={{ width:65+"%" }}>
+      <NavTabs />
       <Contents />
+      </div>
     </div>
   );
 }

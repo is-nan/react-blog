@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Table } from 'antd';
-import { GetArticle,UpdateArticleStatus } from "../../../../../api/Article";
 import { Tag,Switch,message,Button,Divider } from 'antd'
 import { ArticleData } from '../../index'
 function ArticleTable(props) {

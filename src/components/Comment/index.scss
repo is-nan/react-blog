@@ -1,18 +1,28 @@
 .Comment{
+  overflow: hidden;
   .Comment_Input{
-    margin-bottom: 10px;
-    overflow: hidden;
+    margin-bottom: .8rem;
   }
   .Comment_Button{
     float: right;
-    margin-bottom: 20px;
+    margin-top: 1.3rem;
+  }
+  .Comment_Blank{
+    height: 5rem;
+  }
+  .Comment_List{
+    overflow: hidden;
+    .Comment_List__Username{
+      font-size: .9rem;
+      color: #656c7a;
+    }
+    .Comment_List__Time{
+      font-size: .8rem;
+    }
+    .Comment_List__Content{
+      margin-top: .8rem;
+      font-size: 1rem;
+      color: #333333;
+    }
   }
 }
-
-//.Comment-DIV{
-//  height: 2rem;
-//}
-//.Comment-Username{
-//  font-size: 14px;
-//  color: #555555;
-//}

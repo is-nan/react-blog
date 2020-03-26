@@ -1,331 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dab012b9-291c-4cd6-b9c8-5067519128e0" name="默认更改列表" comment="">
+    <list default="true" id="5049c8b0-bfa4-47bf-88dd-44de05dfeb7f" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Comment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Comment/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/http/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/http/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Comment/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Comment/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Error/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Error/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupProxy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Blog/About/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/About/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blog/About/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/About/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Archive/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Archive/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Archive/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Archive/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Article/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Article/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Blog/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Home/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Blog/Home/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Home/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Layouts/Contents/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/Contents/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Layouts/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Layouts/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Article/conponents/AddAndSetArticle/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/AddAndSetArticle/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleFrom/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleFrom/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Layouts/components/Siders/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Layouts/components/Siders/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleTable/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleTable/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Article/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Article/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Comment/components/CommentTable/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Comment/components/CommentTable/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Comment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Comment/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Comment/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Comment/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Layouts/components/Contents/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Layouts/components/Contents/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Link/components/AddAndSetLink/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Link/components/AddAndSetLink/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Link/components/LinkFrom/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Link/components/LinkFrom/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Link/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Link/index.scss" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-58827223">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="js" value="2" />
-          <entry key="jsx" value="4" />
-          <entry key="scss" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JSX Harmony" value="4" />
-          <entry key="JavaScript" value="2" />
-          <entry key="SCSS" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="js" value="13" />
-          <entry key="jsx" value="38" />
-          <entry key="scss" value="51" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JSX Harmony" value="38" />
-          <entry key="JavaScript" value="13" />
-          <entry key="SCSS" value="51" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="35" column="67" lean-forward="true" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/Blog/About/index.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/Blog/Article/index.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/Blog/Home/index.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/Blog/Layouts/index.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" selection-start-column="17" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/views/Blog/Layouts/index.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#195#221#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/Blog/Login/index.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/Blog/Layouts/Contents/index.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#204#230#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/admin/Layouts/components/Contents/index.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="87" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="87" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FavoritesManager">
+    <favorites_list name="react-blog" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JSX file" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>setCategoryList</find>
-      <find>GetCategory</find>
-      <find>username</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/router/index.js" />
-        <option value="$PROJECT_DIR$/src/views/Blog/Layouts/index.jsx" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/views/Blog/Home/index.scss" />
-        <option value="$PROJECT_DIR$/src/views/Blog/Layouts/Contents/index.jsx" />
-        <option value="$PROJECT_DIR$/src/views/Blog/Layouts/index.scss" />
-        <option value="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.scss" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="86" />
-    <option name="y" value="68" />
-    <option name="width" value="1832" />
-    <option name="height" value="979" />
-  </component>
-  <component name="ProjectId" id="1Us5Gk1C5GBKHFGGKD9CczkxQkn" />
+  <component name="ProjectId" id="1ZbGcljQUZnwa497FjWxcOHlTDv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="react-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="Layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="Layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="Layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Contents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="Layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="Layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="Contents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -333,9 +61,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -343,242 +69,37 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\react\react-blog\src\components" />
-      <recent name="E:\NewBlog\react-blog\src\views\Blog" />
-      <recent name="E:\NewBlog\react-blog\src\assets\images" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dab012b9-291c-4cd6-b9c8-5067519128e0" name="默认更改列表" comment="" />
-      <created>1576132372324</created>
+      <changelist id="5049c8b0-bfa4-47bf-88dd-44de05dfeb7f" name="默认更改列表" comment="" />
+      <created>1585100464982</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576132372324</updated>
-      <workItem from="1576132388466" duration="13376000" />
-      <workItem from="1576207010186" duration="56000" />
-      <workItem from="1576476983034" duration="2926000" />
-      <workItem from="1576482084379" duration="5556000" />
-      <workItem from="1576489007622" duration="941000" />
-      <workItem from="1576492448546" duration="12000" />
-      <workItem from="1576825788466" duration="910000" />
-      <workItem from="1576828561888" duration="59000" />
-      <workItem from="1577347048883" duration="7444000" />
-      <workItem from="1577625427742" duration="6694000" />
-      <workItem from="1577672791761" duration="3732000" />
-      <workItem from="1577684149083" duration="361000" />
-      <workItem from="1577684512518" duration="14671000" />
-      <workItem from="1577714272995" duration="5197000" />
-      <workItem from="1577758500527" duration="853000" />
-      <workItem from="1577759391999" duration="14069000" />
-      <workItem from="1578105706733" duration="3953000" />
-      <workItem from="1578138361451" duration="8904000" />
-      <workItem from="1578209439828" duration="3574000" />
-      <workItem from="1578314439441" duration="6614000" />
-      <workItem from="1578398335607" duration="5572000" />
-      <workItem from="1578406892041" duration="1282000" />
-      <workItem from="1578486455809" duration="6138000" />
-      <workItem from="1578574371507" duration="4715000" />
-      <workItem from="1578733161307" duration="382000" />
-      <workItem from="1579679052443" duration="654000" />
-      <workItem from="1581322541383" duration="111000" />
-      <workItem from="1583842287634" duration="3681000" />
-      <workItem from="1584447219429" duration="6762000" />
-      <workItem from="1584499057364" duration="936000" />
-      <workItem from="1584501048306" duration="3451000" />
-      <workItem from="1584522473033" duration="14000" />
-      <workItem from="1584673477633" duration="4508000" />
-      <workItem from="1584753315827" duration="7215000" />
-      <workItem from="1584770233011" duration="15000" />
-      <workItem from="1584781357029" duration="2373000" />
-      <workItem from="1584785348428" duration="1704000" />
-      <workItem from="1584861507060" duration="607000" />
-      <workItem from="1584862195165" duration="684000" />
-      <workItem from="1584878372273" duration="6282000" />
-      <workItem from="1584885429027" duration="2140000" />
-      <workItem from="1584945872352" duration="2005000" />
-      <workItem from="1585039318504" duration="7661000" />
-      <workItem from="1585056782135" duration="102000" />
-      <workItem from="1585057345626" duration="1061000" />
+      <updated>1585100464982</updated>
+      <workItem from="1585100485052" duration="9000" />
+      <workItem from="1585100958140" duration="19323000" />
+      <workItem from="1585131826918" duration="629000" />
+      <workItem from="1585188734338" duration="12634000" />
+      <workItem from="1585208895831" duration="8057000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1163000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="86" y="68" width="1832" height="979" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="调试" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="1018" y="349" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1584674181131">
+    <state x="372" y="65" key="SettingsEditor" timestamp="1585194707503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1018" y="349" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584674181131" />
-    <state x="886" y="288" key="FileChooserDialogImpl" timestamp="1584682830700">
+    <state x="372" y="65" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585194707503" />
+    <state x="566" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1585122477012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="886" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584682830700" />
-    <state x="690" y="68" key="SettingsEditor" timestamp="1584674182702">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="68" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584674182702" />
-    <state x="537" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1584782075027">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="537" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584782075027" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/admin/Layouts/components/Contents/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="87" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="87" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="35" column="67" lean-forward="true" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Blog/About/index.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Blog/Article/index.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Blog/Home/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Blog/Layouts/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Blog/Login/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Blog/Layouts/Contents/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#204#230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Blog/Layouts/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#195#221#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <state x="566" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585122477012" />
   </component>
 </project>

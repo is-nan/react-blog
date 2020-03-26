@@ -17,8 +17,9 @@ function Contents() {
       <div className="Contents_Router">
       <Switch>
         {BlogRouter.map((Item, index) => {
-          return <Route path={Item.path} component={Item.component}/>
+          return <Route path={Item.path} component={Item.component} key={index} exact/>
         })}
+      <Redirect from="/" to="/Home" exact/>
       </Switch>
       </div>
     </div>
