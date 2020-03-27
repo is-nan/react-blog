@@ -2,37 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5049c8b0-bfa4-47bf-88dd-44de05dfeb7f" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Comment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Comment/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Comment/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Comment/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Error/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Error/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blog/About/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/About/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blog/Archive/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Archive/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blog/Archive/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Archive/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blog/Article/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blog/Article/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Information/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/components/Sidebar/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Information/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavTabs/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/components/NavTabs/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavTabs/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/components/NavTabs/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavTabs/index.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Blog/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Home/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Blog/Home/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Home/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blog/Layouts/Contents/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/Contents/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Layouts/Contents/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/components/Contents/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Blog/Layouts/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Blog/Layouts/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Article/conponents/AddAndSetArticle/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/AddAndSetArticle/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleFrom/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleFrom/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleTable/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleTable/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Article/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Article/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Comment/components/CommentTable/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Comment/components/CommentTable/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Comment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Comment/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Comment/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Comment/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Layouts/components/Contents/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Layouts/components/Contents/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Link/components/AddAndSetLink/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Link/components/AddAndSetLink/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Link/components/LinkFrom/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Link/components/LinkFrom/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Link/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Link/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +53,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\react\react-blog\src\views\Blog\Layouts\components" />
+      <recent name="D:\react\react-blog\src\views\Blog\Layouts" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -86,6 +74,10 @@
       <workItem from="1585131826918" duration="629000" />
       <workItem from="1585188734338" duration="12634000" />
       <workItem from="1585208895831" duration="8057000" />
+      <workItem from="1585276985117" duration="3447000" />
+      <workItem from="1585287132726" duration="13000" />
+      <workItem from="1585298793460" duration="1567000" />
+      <workItem from="1585302695098" duration="2546000" />
     </task>
     <servers />
   </component>

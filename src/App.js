@@ -20,8 +20,7 @@ import { Blog, Admin } from "./router";
 import store from "./redux/index";
 import { Provider } from "react-redux";
 import Loading from "./components/Loading";
-const NavTabs = lazy(()=>import ('./components/NavTabs'))
-// const Loading = lazy(()=>import ('./components/Loading'))
+const NavTabs = lazy(()=>import ('./views/Blog/Layouts/components/NavTabs'))
 function App() {
   return (
     <div className="App">

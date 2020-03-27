@@ -9,8 +9,8 @@
  */
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-import { BlogRouter } from "../../../../router";
-import '../index.scss'
+import { BlogRouter } from "../../../../../router";
+import '../../index.scss'
 function Contents() {
   return (
     <div className="Contents">

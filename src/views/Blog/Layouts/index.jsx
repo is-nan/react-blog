@@ -8,14 +8,15 @@
  * @
  */
 import React from "react";
-import Contents from "./Contents";
-import Information from "../../../components/Information";
-import NavTabs from '../../../components/NavTabs'
+import Contents from "./components/Contents";
+import Information from "./components/Sidebar";
+import NavTabs from './components/NavTabs'
+import './index.scss'
 function Layout() {
   return (
-    <div style={{ display: "flex" }}>
+    <div className="Layouts">
       <Information />
-      <div style={{ width:65+"%" }}>
+      <div className="Main">
       <NavTabs />
       <Contents />
       </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.scss'
+import '../../index.scss'
 import { NavLink } from 'react-router-dom'
 import Nav from "./config";
 function NavTabs() {

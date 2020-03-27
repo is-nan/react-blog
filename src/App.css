@@ -5,3 +5,8 @@ html{
 body{
     font-family: -apple-system,BlinkMacSystemFont,"opensans","Optima","Microsoft Yahei",sans-serif;
 }
+/*@media screen and (max-width: 960px){*/
+/*    html{*/
+/*        font-size: 12px;*/
+/*    }*/
+/*}*/

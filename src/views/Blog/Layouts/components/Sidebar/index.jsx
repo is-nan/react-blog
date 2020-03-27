@@ -1,17 +1,12 @@
 import React,{ useEffect } from 'react'
-import './index.scss'
+import '../../index.scss'
 import { useSelector,useDispatch } from 'react-redux'
-import { ActionsGetLinkList } from '../../redux/actions/Link'
-function Information (props) {
+function Sidebar (props) {
   //实例化redux
-  const Dispatch=useDispatch()
-  const store=useSelector(state=>state.Link)
-  console.log(store)
-  useEffect(()=>{
-    Dispatch(ActionsGetLinkList())
-  },[])
+  // const Dispatch=useDispatch()
+  // const store=useSelector(state=>state.Link)
   return(
-    <div className="information">
+    <div className="Sidebar">
       <div className="BloggerAvatarCon">
         <img src="http://www.images.nanbk.com/images/2020/03/12/15652482794301084.jpg" className="BloggerAvatarCon__Avatar" />
       </div>
@@ -36,4 +31,4 @@ function Information (props) {
   )
 }
 
-export default Information
+export default Sidebar
