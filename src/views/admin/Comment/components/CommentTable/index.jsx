@@ -57,7 +57,9 @@ function CommentTable(props) {
     ]
     return(
         <div>
-            <Table rowKey="id" dataSource={props.data} columns={columns} scroll={true}/>
+            <Table rowKey="id" dataSource={props.data} columns={columns} scroll={true}
+            style={{height: 34+'vh',overflowY: 'scroll'}}
+            />
         </div>
     )
 }
