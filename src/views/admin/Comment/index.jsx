@@ -76,7 +76,7 @@ function Comment(props) {
                     handleCreate={handleCreate}
                 />
                 <p>博客留言</p>
-                <CommentTable data={Comment} DeleComment={DeleComment}/>
+                <CommentTable data={Comment} DeleComment={DeleComment} AddAndSetLinkFun={AddAndSetLinkFun}/>
                 <p>文章评论</p>
                 <CommentTable data={ArticleComment} DeleComment={DeleComment} AddAndSetLinkFun={AddAndSetLinkFun}/>
             </CommentData.Provider>

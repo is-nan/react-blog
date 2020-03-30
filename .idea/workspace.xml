@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5049c8b0-bfa4-47bf-88dd-44de05dfeb7f" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Comment/components/CommentTable/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Comment/components/CommentTable/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Comment/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Comment/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Layouts/components/Headers/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Layouts/components/Headers/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Layouts/components/Siders/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Layouts/components/Siders/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Layouts/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Layouts/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Archive/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Archive/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin/Comment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Comment/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,8 @@
       <workItem from="1585287132726" duration="13000" />
       <workItem from="1585298793460" duration="1567000" />
       <workItem from="1585302695098" duration="2546000" />
-      <workItem from="1585384183626" duration="2905000" />
+      <workItem from="1585384183626" duration="2917000" />
+      <workItem from="1585533576277" duration="8281000" />
     </task>
     <servers />
   </component>
@@ -80,10 +81,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="372" y="65" key="SettingsEditor" timestamp="1585194707503">
+    <state x="372" y="65" key="SettingsEditor" timestamp="1585552940840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="372" y="65" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585194707503" />
+    <state x="372" y="65" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585552940840" />
     <state x="566" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1585122477012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

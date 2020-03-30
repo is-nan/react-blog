@@ -9,7 +9,7 @@
  */
 import React,{useState,useEffect} from 'react'
 import { GetArticleDetailsAndComment } from '../../../api/ArticleDetails'
-import { useParams } from 'react-router-dom'
+import { useParams,useLocation } from 'react-router-dom'
 import { Icon } from 'antd';
 import Comment from '../../../components/Comment'
 import './index.scss'

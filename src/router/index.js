@@ -32,6 +32,8 @@ const ArticleDetails = lazy(() =>
 const Layout = lazy(() =>
         import ('../views/Blog/Layouts'))
 const Messages = lazy(()=>import ('../views/Blog/Messages'))
+const Tags = lazy(()=>import('../views/Blog/Tags'))
+const Categories = lazy(()=>import('../views/Blog/Categories'))
     //博客页面路由
 export const Blog = {
     path: '/',
@@ -44,6 +46,8 @@ export const BlogRouter = [
         { path: '/Archive', component: Archive },
         { path: '/ArticleDetails/:id', component: ArticleDetails },
         { path: '/Messages',component:Messages },
+        { path: '/Tags/:name',component:Tags },
+        { path: '/Categories/:name',component:Categories },
         { path: '*', component: Error }
     ]
     //后台页面路由

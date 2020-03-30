@@ -1,0 +1,50 @@
+.ArticleList {
+  .ArticleList_Year {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-weight: bold;
+    color: #464646;
+    font-size: 22px;
+    margin: 30px 0px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -5px;
+      width: 0;
+      height: 1px;
+      background-color: #464646;
+      transition: all 0.3s;
+    }
+
+    &:hover:before {
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
+  }
+  .ArticleList_Item{
+    overflow: hidden;
+    .ArticleList_Item__Title {
+      font-size: 1rem;
+      color: #5f5f5f;
+      cursor: pointer;
+      overflow: hidden;
+      &:hover{
+        color: #4786d6;
+      }
+    }
+    .ArticleList_Item_Date{
+      float: right;
+      color: #5f5f5f;
+      font-size: .9rem;
+    }
+  }
+}
+
