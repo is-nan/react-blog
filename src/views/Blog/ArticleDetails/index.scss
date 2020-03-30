@@ -12,6 +12,10 @@
         margin: 0 .5rem;
         font-size: .9rem;
         color: #888888;
+        cursor: pointer;
+        &:hover{
+            color: #c0363f;
+        }
     }
     .ArticleDetails_FooterBd{
         width: 90%;

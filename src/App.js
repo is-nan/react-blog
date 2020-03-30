@@ -21,7 +21,6 @@ import store from "./redux/index";
 import { Provider } from "react-redux";
 import Loading from "./components/Loading";
 const Login = lazy(() => import ('./views/Blog/Login'))
-const NavTabs = lazy(()=>import ('./views/Blog/Layouts/components/NavTabs'))
 function App() {
   return (
     <div className="App">
@@ -30,10 +29,10 @@ function App() {
           {/*路由过渡动画*/}
           <Suspense fallback={<div><Loading /></div>}>
             <Switch>
+              {/*后台登录页*/}
+              <Route path="/Login" component={Login}/>
               {/*后台路由*/}
-              <Route path="/Login" component={Login} />
               <Route path={Admin.path} component={Admin.component} />
-              <Route path="/NavTabs" component={NavTabs}/>
               {/*博客路由*/}
               <Route path={Blog.path} component={Blog.component} />
             </Switch>

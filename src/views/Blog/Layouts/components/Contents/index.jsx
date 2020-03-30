@@ -7,10 +7,11 @@
  * @FilePath: \react-blog\src\views\Blog\Layouts\Contents\index.jsx
  * @
  */
-import React from "react";
+import React from 'react'
 import { Route, Switch, Redirect } from "react-router-dom";
 import { BlogRouter } from "../../../../../router";
 import '../../index.scss'
+
 function Contents() {
   return (
     <div className="Contents">
@@ -20,6 +21,7 @@ function Contents() {
           return <Route path={Item.path} component={Item.component} key={index} exact/>
         })}
       <Redirect from="/" to="/Home" exact/>
+      {/*<Redirect from="*" to="/404" exact/>*/}
       </Switch>
       </div>
     </div>

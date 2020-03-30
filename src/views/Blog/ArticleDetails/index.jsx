@@ -9,7 +9,7 @@
  */
 import React,{useState,useEffect} from 'react'
 import { GetArticleDetailsAndComment } from '../../../api/ArticleDetails'
-import { useParams,useLocation } from 'react-router-dom'
+import { useParams,useHistory } from 'react-router-dom'
 import { Icon } from 'antd';
 import Comment from '../../../components/Comment'
 import './index.scss'
@@ -24,6 +24,8 @@ const IconFont = Icon.createFromIconfontCN({
  scriptUrl: '//at.alicdn.com/t/font_1710871_fzogmiqut6k.js',
 })
  function ArticleDetails(props){
+  //编程式路由跳转
+   const history=useHistory()
   //  路由参数ID获取
   const { id } = useParams()
     //  文章详情数据
@@ -76,7 +78,7 @@ const IconFont = Icon.createFromIconfontCN({
      <span><IconFont type="icon-duihaoqipao2" className="ArticleDetails_Icon" /></span>
      {
       ArticleData.Categories.map((Items, index) => {
-       return <span className="ArticleDetails_Tag" key={index}>{Items.CategoryName}</span>
+       return <span className="ArticleDetails_Tag" key={index} onClick={() => {history.push(`/Categories/${Items.CategoryName}`);}}>{Items.CategoryName}</span>
       })
      }
 
@@ -84,7 +86,7 @@ const IconFont = Icon.createFromIconfontCN({
      <span><IconFont type="icon-biaoqian" className="ArticleDetails_Icon" /></span>
      {
       ArticleData.Tags.map((Items, index) => {
-       return <span className="ArticleDetails_Tag" key={index}>{Items.TagName}</span>
+       return <span className="ArticleDetails_Tag" key={index} onClick={() => {history.push(`/Tags/${Items.TagName}`);}}>{Items.TagName}</span>
       })
      }
       <div className="ArticleDetails_FooterBd"></div>

@@ -48,7 +48,7 @@ export const BlogRouter = [
         { path: '/Messages',component:Messages },
         { path: '/Tags/:name',component:Tags },
         { path: '/Categories/:name',component:Categories },
-        { path: '*', component: Error }
+        // { path: '*', component: Error }
     ]
     //后台页面路由
 export const Admin = {
@@ -59,5 +59,5 @@ export const AdminRouter = [
     { path: '/admin/Article', component: AdminArticle },
     { path: '/admin/Comment', component: AdminComment },
     { path: '/admin/Link', component: AdminLink },
-    { path: '*', component: Error }
+    // { path: '*', component: Error }
 ]

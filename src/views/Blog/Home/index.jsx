@@ -58,7 +58,7 @@ function Home(props) {
                                     </span>
                                     {Item.Categories.map((Items, index) => {
                                         return (
-                                            <span className="ArticleList_Item__Tags" key={index}>
+                                            <span className="ArticleList_Item__Tags" key={index} onClick={() => {history.push(`/Categories/${Items.CategoryName}`);}}>
                                                 {Items.CategoryName}
                                             </span>
                                         );
@@ -69,7 +69,7 @@ function Home(props) {
                                     </span>
                                     {Item.Tags.map((Items, index) => {
                                         return (
-                                            <span className="ArticleList_Item__Tags" key={index}>
+                                            <span className="ArticleList_Item__Tags" key={index} onClick={() => {history.push(`/Tags/${Items.TagName}`);}}>
                                                 {Items.TagName}
                                             </span>
                                         );

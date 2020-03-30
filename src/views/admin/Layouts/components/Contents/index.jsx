@@ -2,6 +2,7 @@ import React from "react"
 import { Layout} from 'antd';
 import {Route, Switch,Redirect} from 'react-router-dom'
 import { AdminRouter } from "../../../../../router";
+import { GetToken } from '../../../../../cookie'
 
 const { Content } = Layout;
 function Contents(props) {
@@ -17,10 +18,12 @@ function Contents(props) {
             >
                 <Switch>
                     {
-                        AdminRouter.map((Item,index)=>{
+                      GetToken()?AdminRouter.map((Item,index)=>{
                             return <Route path={Item.path} component={Item.component} key={index} exact/>
-                        })
+                        }):<Redirect to="/404" exact/>
                     }
+                  <Redirect from="/admin" to="/admin/article" exact/>
+                  {/*<Redirect from="*" to="/404" exact/>*/}
                 </Switch>
             </Content>
         </div>
