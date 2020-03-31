@@ -3,9 +3,14 @@ import ArticleTable from "./conponents/ArticleTable";
 import AddAndSetArticle from "./conponents/AddAndSetArticle";
 import { Button, Modal ,message } from 'antd'
 import { NewArticle,UpdateArticle,GetArticle,UpdateArticleStatus } from '../../../api/Article'
+import { useDispatch } from 'react-redux'
+import { ActionsGetCategoryList } from "../../../redux/actions/Category";
+import { ActionsGetTagList } from "../../../redux/actions/Tag";
 //定义共享数据
 export const ArticleData=new createContext();
 function Article(props) {
+    //redux派发
+    const Dispatch=useDispatch()
     //弹出框显示控制变量
     const [visible, setvisible] = useState(false)
     //显示弹出框
@@ -28,6 +33,8 @@ function Article(props) {
     }
     useEffect(()=>{
         GetArticleList()
+        Dispatch(ActionsGetCategoryList())
+        Dispatch(ActionsGetTagList())
     },[])
     //修改文章状态
     const UpTableArticleStatus=async (record)=>{

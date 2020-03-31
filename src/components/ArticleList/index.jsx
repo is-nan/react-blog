@@ -42,7 +42,7 @@ function ArticleList(props) {
                           <span className="ArticleList_Item__Title"
                                 onClick={()=>{history.push(`/ArticleDetails/${Items.id}`)}}
                           >{Items.title}</span>
-                                            <span className="ArticleList_Item_Date">{moment(Items.createdTime).calendar()}</span>
+                                            <span className="ArticleList_Item_Date">{moment(Items.createdTime).format("MMMDo")}</span>
                                         </p>:null
                                     )
                                 })

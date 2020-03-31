@@ -10,7 +10,7 @@ function Tag (state=TagData,action) {
     case GETTAGLIST:
       return {
         ...state,
-        TagList:action.data
+        TagList:action.data.map(val=>val.TagName)
       }
     default:return state
   }

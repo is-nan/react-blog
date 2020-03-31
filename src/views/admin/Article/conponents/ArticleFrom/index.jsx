@@ -4,9 +4,16 @@ import { GetToken } from '../../../../../cookie/index'
 import '../../index.scss'
 import { ArticleData } from '../../index'
 import moment from 'moment';
+import { useSelector } from 'react-redux'
+import Category from "../../../../../redux/reducers/Category";
 const { CheckableTag } = Tag;
 const {Option} = Select;
 function ArticleFrom() {
+    //获取redux中的标签和分组数据
+    const Store=useSelector((state)=>{
+        const {Tag,Category}=state
+        return {Tag,Category}
+    })
     //使用共享数据
   const {Data,setData}=useContext(ArticleData)
   //封面上传配置
@@ -37,11 +44,11 @@ function ArticleFrom() {
                 </Form.Item>
                 <Form.Item label="分类" className="From_Item">
                     <Tags GetValue={(value)=>{setData({...Data,Category: value})}}
-                          TagsValue={Data.Category}/>
+                          TagsValue={Data.Category} TagsList={Store.Category.CategoryList}/>
                 </Form.Item>
                 <Form.Item label="标签" className="From_Item">
                     <Tags GetValue={(value)=>{setData({...Data,TagName: value})}}
-                          TagsValue={Data.TagName}/>
+                          TagsValue={Data.TagName} TagsList={Store.Tag.TagList}/>
                 </Form.Item>
                 <Form.Item label="日期">
                     <DatePicker showTime onChange={(date,dataTime)=>{setData({...Data,createdTime:dataTime})}}
@@ -81,7 +88,11 @@ function ArticleFrom() {
 //标签组件
 function Tags(props) {
     //标签列表
-    const [TagsList,setTagsList]=useState(['Movies', 'Books', 'Music', 'Sports'])
+    const [TagsList,setTagsList]=useState([])
+    //从redux中获取数据列表
+    useEffect(()=>{
+        setTagsList(props.TagsList)
+    },[])
     //选中标签
     const [TagsValue,setTagsValue]=useState([])
     //添加框显示隐藏
@@ -96,7 +107,7 @@ function Tags(props) {
     }
     useEffect(()=>{
         setTagsValue(props.TagsValue)
-    },[props])
+    },[props.TagsValue])
     //点击添加时显示输入框
     const showInput = () => {
         setShow(true)

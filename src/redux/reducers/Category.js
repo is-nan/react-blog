@@ -10,7 +10,7 @@ function Category (state=CategoryData,action) {
     case GETCATEGORYLIST:
       return {
         ...state,
-        CategoryList: action.data
+        CategoryList: action.data.map(val=>val.CategoryName)
       }
     default:return state
   }

@@ -20,7 +20,7 @@ const toolbar={
 function Editor (props) {
   const $vm = useRef(null);
   const addImg=($file)=>{
-    $vm.current.$img2Url($file, 'http://localhost:9000/api/UploadImages')
+    $vm.current.$img2Url($file, '/api/UploadImages')
   }
   return (
   <Editors

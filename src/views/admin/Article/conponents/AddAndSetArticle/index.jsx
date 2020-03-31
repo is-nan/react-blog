@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react'
 import { Modal } from 'antd';
-import moment from 'moment'
 import ArticleFrom from "../ArticleFrom";
 import Editor from '../../../../../components/Editor'
 import { ArticleData } from '../../index'
