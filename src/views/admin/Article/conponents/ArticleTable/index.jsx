@@ -55,7 +55,7 @@ function ArticleTable(props) {
                 id:record.id})
             }}>编辑{record.index}</Button>
               <Divider type="vertical" />
-            <Button type="danger" size="small">删除{record.index}</Button>
+            <Button type="danger" size="small" onClick={()=>{props.DAeleterticle(record.id)}}>删除{record.index}</Button>
           </div>
         )
       }

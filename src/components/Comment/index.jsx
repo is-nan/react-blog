@@ -82,7 +82,7 @@ function Comments(props) {
                             >回复</span>]}
                             author={<a className="Comment_List__Username">{Item.username}</a>}
                             avatar={
-                                <Avatar src={Item.Avatar?Item.Avatar:'http://www.images.nanbk.com/images/2020/03/25/iiyf1hatsit.jpg'} alt="Han Solo"/>
+                                <Avatar src={Item.Avatar?Item.Avatar:'https://www.images.nanbk.com/images/2020/03/25/iiyf1hatsit.jpg'} alt="Han Solo"/>
                             }
                             content={<p className="Comment_List__Content">{Item.content}</p>}
                             datetime={

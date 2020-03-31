@@ -2,7 +2,7 @@ import React, { createContext, useState,useEffect } from 'react'
 import ArticleTable from "./conponents/ArticleTable";
 import AddAndSetArticle from "./conponents/AddAndSetArticle";
 import { Button, Modal ,message } from 'antd'
-import { NewArticle,UpdateArticle,GetArticle,UpdateArticleStatus } from '../../../api/Article'
+import { NewArticle,UpdateArticle,GetArticle,UpdateArticleStatus,DeleteArticle } from '../../../api/Article'
 import { useDispatch } from 'react-redux'
 import { ActionsGetCategoryList } from "../../../redux/actions/Category";
 import { ActionsGetTagList } from "../../../redux/actions/Tag";
@@ -47,6 +47,17 @@ function Article(props) {
                 }
             })
         await GetArticleList()
+    }
+    //删除文章
+    const DeArticle=(id)=>{
+        DeleteArticle(id)
+            .then((res)=>{
+                if(res.data.code===0){
+                    message.success(res.data.mess);
+                }else {
+                    message.error(res.data.mess);
+                }
+            })
     }
     //创建新文章or修改文章
     const AddAndSetArticleFun = (type = 0) => {
@@ -98,7 +109,7 @@ function Article(props) {
                 <ArticleData.Provider value={{Data, setData}}>
                     {/*文章表格组件*/}
                     <ArticleTable AddAndSetArticleFun={AddAndSetArticleFun} data={TableData}
-                    TableArticleonChange={UpTableArticleStatus}/>
+                    TableArticleonChange={UpTableArticleStatus} DAeleterticle={DeArticle}/>
                     {/*新增and修改弹窗组件*/}
                     <AddAndSetArticle
                         visible={visible}

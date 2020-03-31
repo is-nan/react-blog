@@ -8,7 +8,7 @@ function Sidebar (props) {
   return(
     <div className="Sidebar">
       <div className="BloggerAvatarCon">
-        <img src="http://www.images.nanbk.com/images/2020/03/12/15652482794301084.jpg" className="BloggerAvatarCon__Avatar" />
+        <img src="https://www.images.nanbk.com/images/2020/03/12/15652482794301084.jpg" className="BloggerAvatarCon__Avatar" />
       </div>
       <div className="Readme">
         <h2 className="Readme_Name">南岸有归</h2>

@@ -32,7 +32,7 @@ function Comment(props) {
     const [visible, setvisible] = useState(false)
     //回复信息
     const [Data,setData]=useState({username:'南岸有归',url:'https://www.nanbk.com',email:'1149807390@qq.com',
-        ArticleId:null,CommentId:null,content:'@',Avatar:'http://www.images.nanbk.com/images/2020/03/12/15652482794301084.jpg'})
+        ArticleId:null,CommentId:null,content:'@',Avatar:'https://www.images.nanbk.com/images/2020/03/12/15652482794301084.jpg'})
     //显示弹框
     const AddAndSetLinkFun=()=>{
         setvisible(!visible)

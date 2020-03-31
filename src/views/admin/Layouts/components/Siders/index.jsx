@@ -13,7 +13,7 @@ function Siders(props) {
             <Sider trigger={null} collapsible collapsed={props.collapsed}
                    style={{ height:100+'vh'}}>
                 <div className="logo">
-                    <img src="http://www.images.nanbk.com/images/2020/03/28/uugai.com_1585385032493.png" />
+                    <img src="https://www.images.nanbk.com/images/2020/03/28/uugai.com_1585385032493.png" />
                 </div>
                 <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
                     <Menu.Item key="1" onClick={()=>{history.push('/admin/article')}}>
