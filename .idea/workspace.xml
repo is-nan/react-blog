@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5049c8b0-bfa4-47bf-88dd-44de05dfeb7f" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/getHttpsConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/pnpTs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Comment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Comment/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Error/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Error/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blog/Layouts/components/Sidebar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/components/Sidebar/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticleList/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticleList/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Blog/Layouts/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleTable/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/conponents/ArticleTable/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Article/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Article/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Comment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Comment/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/Layouts/components/Siders/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/Layouts/components/Siders/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +36,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -60,10 +44,12 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\react\react-blog\public" />
       <recent name="D:\react\react-blog\src\views\Blog\Layouts\components" />
       <recent name="D:\react\react-blog\src\views\Blog\Layouts" />
     </key>
@@ -91,6 +77,9 @@
       <workItem from="1585533576277" duration="8281000" />
       <workItem from="1585571046086" duration="4282000" />
       <workItem from="1585619034441" duration="14817000" />
+      <workItem from="1586254010693" duration="837000" />
+      <workItem from="1586309625224" duration="39000" />
+      <workItem from="1586331910924" duration="1424000" />
     </task>
     <servers />
   </component>
@@ -102,6 +91,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="372" y="65" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585552940840" />
+    <state x="411" y="129" width="1301" height="816" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586332662875">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="411" y="129" width="1301" height="816" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586332662875" />
     <state x="566" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1585624058955">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

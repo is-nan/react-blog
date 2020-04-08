@@ -31,6 +31,8 @@
   }
   .ArticleList_Item{
     overflow: hidden;
+    display: flex;
+    justify-content:space-between;
     .ArticleList_Item__Title {
       font-size: 1rem;
       color: #5f5f5f;
@@ -41,7 +43,6 @@
       }
     }
     .ArticleList_Item_Date{
-      float: right;
       color: #5f5f5f;
       font-size: .9rem;
     }
