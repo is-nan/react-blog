@@ -50,7 +50,7 @@ function Home(props) {
                                         <IconFont type="icon-taiyang" className="ArticleList_Item__Icon"/>
                                     </span>
                                     <span className="ArticleList_Item__Date">
-                                        {moment(Item.createdTime).subtract(10, 'days').calendar()}
+                                        {moment(Item.createdTime).format("YYYY/MM/DD")}
                                     </span>
                                     {/* 分类 */}
                                     <span>
