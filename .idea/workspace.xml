@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5049c8b0-bfa4-47bf-88dd-44de05dfeb7f" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ArticleList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticleList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blog/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/About/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/About/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Layouts/components/Sidebar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/components/Sidebar/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blog/Layouts/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/Layouts/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\react\react-blog\public" />
       <recent name="D:\react\react-blog\public" />
       <recent name="D:\react\react-blog\src\views\Blog\Layouts\components" />
       <recent name="D:\react\react-blog\src\views\Blog\Layouts" />
@@ -81,6 +84,7 @@
       <workItem from="1589017199083" duration="432000" />
       <workItem from="1589017632916" duration="119000" />
       <workItem from="1589017818011" duration="549000" />
+      <workItem from="1589360315312" duration="5125000" />
     </task>
     <servers />
   </component>

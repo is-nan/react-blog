@@ -63,13 +63,16 @@ function About (props) {
                     <a className="About-code" href="http://www.singleyun.com" target="_blank">智联物联云平台</a>
                 </li>
                 <li>
-                    <a className="About-code">智联物联云小程序</a>
+                    <a className="About-code">智联物联云小程序(微信搜索智联物联云)</a>
+                </li>
+                <li>
+                    <a className="About-code">智联云打印小程序(微信搜索智联云打印)</a>
                 </li>
                 <li>
                     <a className="About-code" href="https://www.nanbk.com" target="_blank">react全栈博客</a>
                 </li>
                 <li>
-                    <a className="About-code" href="https://www.nanbk.com" target="_blank">博客小程序</a>
+                    <a className="About-code" href="https://www.nanbk.com" target="_blank">博客小程序(微信搜索NAYG)</a>
                 </li>
             </ul>
             <h3 className="About-Title">联系方式</h3>

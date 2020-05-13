@@ -19,17 +19,26 @@
   height: 100vh;
   background-size:cover;
   padding-top: 20vh;
-  background-image: url("https://www.images.nanbk.com/images/2020/04/07/4k_440_-min-1.jpg");
+  background-image: url("https://www.images.nanbk.com/images/2020/05/13/bc25327b926a687d718d4c5bc0e9326a.jpg");
   .BloggerAvatarCon{
-    width: 5rem;
-    height: 5rem;
+    width: 5.2rem;
+    height: 5.2rem;
     background-color: #ffffff;
     border-radius: 50%;
     margin: 0 auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
     .BloggerAvatarCon__Avatar{
       width: 5rem;
       height: 5rem;
       border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      transition: all 2.0s;
+      &:hover{
+        transform: rotate(360deg);
+      }
     }
   }
   .Readme{
