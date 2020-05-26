@@ -10,12 +10,11 @@
 import React,{useState,useEffect} from 'react'
 import { GetArticleDetailsAndComment } from '../../../api/ArticleDetails'
 import { useParams,useHistory } from 'react-router-dom'
-import { Icon } from 'antd';
+import { Icon} from 'antd';
 import Comment from '../../../components/Comment'
 import './index.scss'
 import marked from 'marked';
 import 'highlight.js/styles/tomorrow-night.css';
-import hljs from 'highlight.js';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
 moment.locale()
@@ -26,9 +25,9 @@ const IconFont = Icon.createFromIconfontCN({
  function ArticleDetails(props){
   //编程式路由跳转
    const history=useHistory()
-  //  路由参数ID获取
-  const { id } = useParams()
-    //  文章详情数据
+   //  路由参数ID获取
+   const { id } = useParams()
+   //  文章详情数据
    const [ArticleData,setArticleData]=useState({Categories:[],Tags:[]})
    //文章评论数据
    const [CommentData,setCommentData]=useState([])
@@ -50,23 +49,23 @@ const IconFont = Icon.createFromIconfontCN({
            sanitize: true,
            smartLists: true,
            smartypants: false,
-           highlight: function(code) {
-               return hljs.highlightAuto(code).value;
-           },
+           highlight: function(code, lang, callback) {
+               return require('highlight.js').highlightAuto(code).value
+           }
        });
-    GetArticleDetails()
+       GetArticleDetails()
    },[])
   return (
     <div className="ArticleDetails">
      <p className="ArticleDetails_Title">{ArticleData.title}</p>
         <div className="content">
-            <div
-                id="content"
-                className="article-detail"
-                dangerouslySetInnerHTML={{
-                    __html: ArticleData.content ? marked(ArticleData.content) : null,
-                }}
-            />
+                <div
+                    id="content"
+                    className="article-detail"
+                    dangerouslySetInnerHTML={{
+                        __html: ArticleData.content ? marked(ArticleData.content) : null,
+                    }}
+                />
         </div>
       {/* 评论组件 */}
      <span><IconFont type="icon-taiyang" className="ArticleDetails_Icon" /></span>
@@ -90,6 +89,7 @@ const IconFont = Icon.createFromIconfontCN({
       })
      }
       <div className="ArticleDetails_FooterBd"></div>
+
       <Comment data={CommentData} ArticleId={ArticleData.id} GetData={GetArticleDetails}/>
     </div>
   )
