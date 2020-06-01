@@ -26,7 +26,8 @@ const ForkTsCheckerWebpackPlugin = require('react-dev-utils/ForkTsCheckerWebpack
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
 const CompressionPlugin = require("compression-webpack-plugin")
 const postcssNormalize = require('postcss-normalize');
-
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 const appPackageJson = require(paths.appPackageJson);
 
 // Source maps are resource heavy and can cause out of memory issue for large source files.
@@ -336,7 +337,7 @@ module.exports = function(webpackEnv) {
                 formatter: require.resolve('react-dev-utils/eslintFormatter'),
                 eslintPath: require.resolve('eslint'),
                 resolvePluginsRelativeTo: __dirname,
-                
+
               },
               loader: require.resolve('eslint-loader'),
             },
@@ -369,7 +370,7 @@ module.exports = function(webpackEnv) {
                 customize: require.resolve(
                   'babel-preset-react-app/webpack-overrides'
                 ),
-                
+
                 plugins: [
                   [
                     require.resolve('babel-plugin-named-asset-import'),
@@ -411,7 +412,7 @@ module.exports = function(webpackEnv) {
                 cacheDirectory: true,
                 // See #6846 for context on why cacheCompression is disabled
                 cacheCompression: false,
-                
+
                 // Babel sourcemaps are needed for debugging into node_modules
                 // code.  Without the options below, debuggers like VSCode
                 // show incorrect code and set breakpoints on the wrong lines.
@@ -508,6 +509,33 @@ module.exports = function(webpackEnv) {
       ],
     },
     plugins: [
+      //预渲染
+      process.env.NODE_ENV=='production'? new PrerenderSPAPlugin({
+        staticDir: path.join(__dirname, '../build'),
+// outputDir: path.join(__dirname, '../prerendered'),
+        routes: ['/home', '/about', '/archive','/articleDetails/19','/messages','/Tags/Webpack','/Categories/Vue'],
+        renderer: new Renderer({
+          // inject: {
+          //   foo: 'bar'
+          // },
+          // headless: false,
+          // renderAfterDocumentEvent: 'render-active',
+          // renderAfterElementExists: '.container',
+          renderAfterTime: 5000
+        }),
+        server: {
+          proxy: {
+            "/api": {
+              target: "https://www.nanbk.com/api/",
+              secure: false,
+              changeOrigin: true,
+              pathRewrite: {
+                "^/api": ""
+              }
+            }
+          }
+        }
+      }):null,
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
         Object.assign(

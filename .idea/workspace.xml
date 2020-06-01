@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog/ArticleDetails/index.scss" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
@@ -58,6 +60,18 @@
       <recent name="D:\react\react-blog\src\views\Blog\Layouts\components" />
       <recent name="D:\react\react-blog\src\views\Blog\Layouts" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -90,11 +104,27 @@
       <workItem from="1589017818011" duration="549000" />
       <workItem from="1589360315312" duration="5125000" />
       <workItem from="1590458361519" duration="5492000" />
+      <workItem from="1591016979666" duration="2025000" />
+      <workItem from="1591019370073" duration="1755000" />
+      <workItem from="1591021493044" duration="1538000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="885" y="221" key="FileChooserDialogImpl" timestamp="1589017630299">

@@ -20,7 +20,7 @@ function Contents() {
         {BlogRouter.map((Item, index) => {
           return <Route path={Item.path} component={Item.component} key={index} exact/>
         })}
-      <Redirect from="/" to="/Home" exact/>
+      <Redirect from="/" to="/home" exact/>
       {/*<Redirect from="*" to="/404" exact/>*/}
       </Switch>
       </div>
