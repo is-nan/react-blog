@@ -6,8 +6,8 @@ function About (props) {
             <h3 className="About-Title">很高兴认识你</h3>
             <p className="About-Text">坐标深圳.</p>
             <p className="About-Text">是一名前端开发者.</p>
-            <p className="About-Text">19年毕业,2018年12月开始工作,到现在快有一年半了.</p>
-            <p className="About-Text">博客使用过vue、mongodb、express写过.</p>
+            <p className="About-Text">这个博客从2018年开始运行，主要做一些学习、工作的记录.</p>
+            <p className="About-Text">使用过vue、mongodb、express写过.</p>
             <p className="About-Text">现在这版是使用的react、后端使用的typescript、koa2、mysql开发的.</p>
             <h3 className="About-Title">熟悉的一些技术</h3>
             <ul>
@@ -39,6 +39,9 @@ function About (props) {
                     <span className="About-code">Nginx</span>
                 </li>
                 <li>
+                    <span className="About-code">Go</span>
+                </li>
+                <li>
                     <span className="About-code">小程序开发</span>
                 </li>
             </ul>
@@ -46,9 +49,6 @@ function About (props) {
             <ul>
                 <li>
                     <span className="About-code">算法</span>
-                </li>
-                <li>
-                    <span className="About-code">Go</span>
                 </li>
                 <li>
                     <span className="About-code">V8</span>
@@ -67,6 +67,9 @@ function About (props) {
                 </li>
                 <li>
                     <a className="About-code">智联云打印小程序(微信搜索智联云打印)</a>
+                </li>
+                <li>
+                    <a className="About-code" href="https://www.acc5.com" target="_blank">会计学堂</a>
                 </li>
                 <li>
                     <a className="About-code" href="https://www.nanbk.com" target="_blank">react全栈博客</a>
