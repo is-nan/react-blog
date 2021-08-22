@@ -8,7 +8,7 @@ function Sidebar (props) {
   return(
     <div className="Sidebar">
       <div className="BloggerAvatarCon">
-        <img src="https://www.images.nanbk.com/images/2020/03/12/15652482794301084.jpg" className="BloggerAvatarCon__Avatar" />
+        <img src="https://www.nanbk.com/usr/themes/Akina/images/avatar.png" className="BloggerAvatarCon__Avatar" />
       </div>
       <div className="Readme">
         <h2 className="Readme_Name">南岸有归</h2>
@@ -29,7 +29,7 @@ function Sidebar (props) {
         <p>© 2018-{new Date().getFullYear()}. <a href="http://www.beian.miit.gov.cn">湘ICP备18002965号-2</a></p>
         <p className="Cdn">
           本网站由<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank">
-          <img src="https://www.nanbk.com/images/又拍云_logo5.png"/>
+          <img src="https://react.nanbk.com/images/又拍云_logo5.png"/>
           </a>提供CND加速/云存储服务
           </p>
       </div>

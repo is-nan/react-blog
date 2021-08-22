@@ -21,6 +21,12 @@ function About (props) {
                     <span className="About-code">React</span>
                 </li>
                 <li>
+                    <span className="About-code">Uni-app</span>
+                </li>
+                <li>
+                    <span className="About-code">Taro</span>
+                </li>
+                <li>
                     <span className="About-code">Node.js</span>
                 </li>
                 <li>
@@ -72,19 +78,28 @@ function About (props) {
                     <a className="About-code" href="https://www.acc5.com" target="_blank">会计学堂</a>
                 </li>
                 <li>
-                    <a className="About-code" href="https://www.nanbk.com" target="_blank">react全栈博客</a>
+                    <a className="About-code"  target="_blank">会计学堂微信小程序(微信搜索会计学堂)</a>
                 </li>
                 <li>
-                    <a className="About-code" href="https://www.nanbk.com" target="_blank">博客小程序(微信搜索NAYG)</a>
+                    <a className="About-code" href="https://www.acc5.com" target="_blank">会计学堂百度小程序(百度App搜索会计学堂)</a>
+                </li>
+                <li>
+                    <a className="About-code" href="https://react.nanbk.com" target="_blank">react全栈博客</a>
+                </li>
+                <li>
+                    <a className="About-code" target="_blank">博客小程序(微信搜索NAYG)</a>
+                </li>
+                <li>
+                    <a className="About-code" target="_blank">i指间App</a>
+                </li>
+                <li>
+                    <a className="About-code" target="_blank">烟有App</a>
                 </li>
             </ul>
             <h3 className="About-Title">联系方式</h3>
             <ul>
                 <li>邮箱:
-                    <span className="About-code">1149807390@qq.com</span>
-                </li>
-                <li>qq:
-                    <span className="About-code">1149807390</span>
+                    <span className="About-code">isnanyg@gmail.com</span>
                 </li>
             </ul>
         </div>
